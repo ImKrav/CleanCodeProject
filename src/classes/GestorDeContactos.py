@@ -5,13 +5,13 @@ class GestorDeContactos:
     def __init__(self, usuario: Usuario):
         self.usuario = usuario
 
-    def agregar_contacto(self) -> None:
+    def agregar_contacto(self, id: int, nombre: str, telefono: str, email: str, direccion: str, categoria: str) -> None:
         pass
 
-    def eliminar_contacto(self) -> None:
+    def eliminar_contacto(self, id: int) -> None:
         pass
 
-    def editar_contacto(self) -> None:
+    def editar_contacto(self, id: int, nombre: str, telefono: str, email: str, direccion: str, categoria: str) -> None:
         pass
 
     def buscar_contacto(self) -> list[Contacto]:
