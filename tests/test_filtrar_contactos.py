@@ -3,7 +3,8 @@ import pytest
 from src.classes.Usuario import Usuario
 from src.classes.GestorDeContactos import GestorDeContactos
 
-from src.errors import ErrorNombreVacio, CategoriaNoExistente, ErrorListaVaciaDeContactos
+from src.errors import ErrorNombreVacio, CategoriaNoExistente
+
 
 # CASOS NORMALES
 def test_filtrar_contactos_nombre_exacto():
@@ -29,6 +30,7 @@ def test_filtrar_contactos_nombre_parcial():
     
     for contacto in contactos:
         assert "Juan" in contacto.nombre
+
 
 # CASOS EXTREMOS
 def test_filtrar_contactos_nombre_largo():
@@ -56,6 +58,7 @@ def test_filtrar_contactos_nombre_caracteres_especiales():
     
     for contacto in contactos:
         assert contacto.nombre == nombre_especial
+
 
 # CASOS DE ERROR
 def test_filtrar_contactos_nombre_vacio():

@@ -5,6 +5,7 @@ from src.classes.GestorDeContactos import GestorDeContactos
 
 from src.errors import ContactoNoExistente, ErrorTelefonoMuyLargo, ErrorCorreoInvalido, ErrorNombreVacio
 
+
 # CASOS NORMALES
 def test_editar_contacto_nombre():
     usuario = Usuario(1, "user", "user@email.com", "anotherpass")
@@ -26,6 +27,7 @@ def test_editar_contacto_categoria():
     contacto = gestor.agregar_contacto(3, "Pedro Pelaez", "123456", "pedropelaez@gmail.com", "Calle 321", "Personal")
     contacto = gestor.editar_contacto(3, categoria='Profesional')
     assert contacto.categoria == 'Profesional'
+
 
 # CASOS EXTREMOS
 def test_editar_contacto_nombre_extremo():
@@ -51,6 +53,7 @@ def test_editar_contacto_telefono_extremo():
     telefono_extremo = "9" * 20
     with pytest.raises(ErrorTelefonoMuyLargo):
         gestor.editar_contacto(6, telefono=telefono_extremo)
+
 
 # CASOS DE ERROR
 def test_editar_contacto_inexistente():

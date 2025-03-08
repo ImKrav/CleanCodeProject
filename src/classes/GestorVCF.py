@@ -1,7 +1,8 @@
 from src.classes.Contacto import Contacto
+from src.classes.Usuario import Usuario
 
 class GestorVCF:
-    def __init__(self):
+    def __init__(self, usuario: Usuario):
         pass
 
     def exportar_contactos(self, contactos: list[Contacto], archivo: str) -> None:
