@@ -8,6 +8,11 @@ class ErrorTelefonoNoNumerico(Exception):
         self.mensaje = mensaje
         super().__init__(self.mensaje)
 
+class ErrorTelefonoMuyLargo(Exception):
+    def __init__(self, mensaje="El número de teléfono es muy largo, debe tener como máximo 15 dígitos"):
+        self.mensaje = mensaje
+        super().__init__(self.mensaje)
+
 class ErrorCorreoInvalido(Exception):
     def __init__(self, mensaje="El email no tiene un formato válido"):
         self.mensaje = mensaje

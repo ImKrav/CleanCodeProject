@@ -9,7 +9,7 @@ El objetivo de este proyecto es desarrollar una aplicación para la gestión de 
 | # | Descripción |
 |---|------------|
 | 1 | Crear contacto con nombre, teléfono, email, dirección y categoría válidos. |
-| 2 | Crear contacto solo con nombre y teléfono (sin email ni dirección). |
+| 2 | Crear contacto minimo (solo con nombre y teléfono). |
 | 3 | Crear contacto con categoría vacía. |
 
 #### 🚀 Casos Extremos
