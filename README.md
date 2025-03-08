@@ -1,6 +1,9 @@
 # Gestor de Contactos
 El objetivo de este proyecto es desarrollar una aplicación para la gestión de contactos personales y profesionales, permitiendo almacenar, organizar y manipular información de manera eficiente.
 
+## Diagrama de Clases
+![Diagrama de Clases](https://github.com/ImKrav/CleanCodeProject/blob/main/assets/DiagramaDeClases.png?raw=true)
+
 ## Casos de Prueba
 
 ### **Funcionalidad 1:** Crear un contacto
