@@ -8,6 +8,16 @@ class ErrorTelefonoNoNumerico(Exception):
         self.mensaje = mensaje
         super().__init__(self.mensaje)
 
+class ErrorContrasenaMuyLarga(Exception):
+    def __init__(self, mensaje="La contraseña es muy larga, debe tener como máximo 15 caracteres"):
+        self.mensaje = mensaje
+        super().__init__(self.mensaje)
+
+class ErrorContrasenaVacia(Exception):
+    def __init__(self, mensaje="La contraseña no puede estar vacía"):
+        self.mensaje = mensaje
+        super().__init__(self.mensaje)
+
 class ErrorTelefonoMuyLargo(Exception):
     def __init__(self, mensaje="El número de teléfono es muy largo, debe tener como máximo 15 dígitos"):
         self.mensaje = mensaje
@@ -15,11 +25,6 @@ class ErrorTelefonoMuyLargo(Exception):
 
 class ErrorCorreoInvalido(Exception):
     def __init__(self, mensaje="El email no tiene un formato válido"):
-        self.mensaje = mensaje
-        super().__init__(self.mensaje)
-
-class ErrorContrasenaVacia(Exception):
-    def __init__(self, mensaje="La contraseña no puede estar vacía"):
         self.mensaje = mensaje
         super().__init__(self.mensaje)
 
@@ -58,7 +63,27 @@ class EmailYaExistente(Exception):
         self.mensaje = mensaje
         super().__init__(self.mensaje)
 
+class UsuarioNoExistente(Exception):
+    def __init__(self, mensaje="El usuario no existe"):
+        self.mensaje = mensaje
+        super().__init__(self.mensaje)
+
+class ErrorContrasenaIncorrecta(Exception):
+    def __init__(self, mensaje="La contraseña es incorrecta"):
+        self.mensaje = mensaje
+        super().__init__(self.mensaje)
+
+class LoginEspacioVacio(Exception):
+    def __init__(self, mensaje="Faltan campos obligatorios por llenar"):
+        self.mensaje = mensaje
+        super().__init__(self.mensaje)
+
 class IDYaExistente(Exception):
     def __init__(self, mensaje="El ID ya está registrado"):
+        self.mensaje = mensaje
+        super().__init__(self.mensaje)
+
+class ErrorListaVaciaDeContactos(Exception):
+    def __init__(self, mensaje="La lista de contactos está vacía"):
         self.mensaje = mensaje
         super().__init__(self.mensaje)

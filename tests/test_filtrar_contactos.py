@@ -3,7 +3,7 @@ import pytest
 from src.classes.Usuario import Usuario
 from src.classes.GestorDeContactos import GestorDeContactos
 
-from src.errors import ErrorNombreVacio, CategoriaNoExistente
+from src.errors import ErrorNombreVacio, CategoriaNoExistente, ErrorListaVaciaDeContactos
 
 # CASOS NORMALES
 def test_filtrar_contactos_nombre_exacto():
@@ -40,11 +40,13 @@ def test_filtrar_contactos_nombre_largo():
     for contacto in contactos:
         assert contacto.nombre == nombre_largo
 
-def test_filtrar_contactos_categoria_inexistente():
+def test_filtrar_contactos_categoria_vacia():
     usuario = Usuario(1, "user", "user@email.com", "anotherpass")
     gestor = GestorDeContactos(usuario)
-    with pytest.raises(CategoriaNoExistente):
-        gestor.filtrar_contacto(categoria="Amigo")
+    contactos = gestor.filtrar_contacto(categoria="")
+    
+    for contacto in contactos:
+        assert contacto.categoria == "Sin asignar"
 
 def test_filtrar_contactos_nombre_caracteres_especiales():
     usuario = Usuario(1, "user", "user@email.com", "anotherpass")
@@ -63,11 +65,11 @@ def test_filtrar_contactos_nombre_vacio():
     with pytest.raises(ErrorNombreVacio):
         gestor.filtrar_contacto(nombre="")
 
-def test_filtrar_contactos_categoria_vacia():
+def test_filtrar_contactos_categoria_inexistente():
     usuario = Usuario(1, "user", "user@email.com", "anotherpass")
     gestor = GestorDeContactos(usuario)
     with pytest.raises(CategoriaNoExistente):
-        gestor.filtrar_contacto(categoria="")
+        gestor.filtrar_contacto(categoria="Amigo")
     
 def test_filtrar_contactos_tipo_dato_incorrecto():
     usuario = Usuario(1, "user", "user@email.com", "anotherpass")
