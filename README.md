@@ -1,5 +1,6 @@
 # Gestor de Contactos
 El objetivo de este proyecto es desarrollar una aplicación para la gestión de contactos personales y profesionales, permitiendo almacenar, organizar y manipular información de manera eficiente.
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/ImKrav/CleanCodeProject?quickstart=1)
 
 ## Integrantes
 
