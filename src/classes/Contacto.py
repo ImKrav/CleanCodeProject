@@ -6,3 +6,6 @@ class Contacto:
         self.email = email
         self.direccion = direccion
         self.categoria = categoria
+
+    def __repr__(self):
+        return f"ID: {self.id} - Nombre: {self.nombre} - Teléfono: {self.telefono} - Email: {self.email} - Dirección: {self.direccion} - Categoría: {self.categoria}"

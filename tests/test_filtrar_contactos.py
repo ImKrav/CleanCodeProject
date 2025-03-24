@@ -1,10 +1,7 @@
 import pytest
-
 from src.classes.Usuario import Usuario
 from src.classes.GestorDeContactos import GestorDeContactos
-
 from src.errors import ErrorNombreVacio, CategoriaNoExistente
-
 
 # CASOS NORMALES
 def test_filtrar_contactos_nombre_exacto():

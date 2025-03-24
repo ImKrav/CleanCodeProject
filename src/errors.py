@@ -59,11 +59,6 @@ class CategoriaNoExistente(Exception):
         self.mensaje = mensaje
         super().__init__(self.mensaje)
 
-class ErrorCategoriaVacia(Exception):
-    def __init__(self, mensaje="La categoría no puede estar vacía"):
-        self.mensaje = mensaje
-        super().__init__(self.mensaje)
-
 # Errores relacionados archivos
 class ErrorPermisosDeEscritura(Exception):
     def __init__(self, mensaje="No tienes permisos de escritura en el directorio"):
@@ -93,5 +88,15 @@ class LoginEspacioVacio(Exception):
 
 class IDYaExistente(Exception):
     def __init__(self, mensaje="El ID ya está registrado"):
+        self.mensaje = mensaje
+        super().__init__(self.mensaje)
+
+class IDVacia(Exception):
+    def __init__(self, mensaje="El ID no puede estar vacío"):
+        self.mensaje = mensaje
+        super().__init__(self.mensaje)
+
+class IDNoEncontrado(Exception):
+    def __init__(self, mensaje="ID no encontrado"):
         self.mensaje = mensaje
         super().__init__(self.mensaje)

@@ -8,5 +8,5 @@ class Usuario:
         self.password = password
         self.contactos : list[Contacto] = []
 
-    def ver_contactos() -> list[Contacto]:
-        pass
+    def __repr__(self):
+        return f"ID: {self.id} - Nombre: {self.nombre} - Email: {self.email}"

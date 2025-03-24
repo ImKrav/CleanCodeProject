@@ -1,12 +1,9 @@
 import pytest
 import os
-
 from src.classes.Usuario import Usuario
 from src.classes.Contacto import Contacto
 from src.classes.GestorVCF import GestorVCF
-
 from src.errors import ErrorListaVaciaDeContactos, ErrorArchivoCorrupto, ErrorNoVCF, ErrorPermisosDeEscritura
-
 
 # CASOS NORMALES
 def test_exportar_lista_con_5_contactos():

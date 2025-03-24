@@ -1,21 +1,71 @@
 from src.classes.Usuario import Usuario
 from src.classes.Contacto import Contacto
+from src.errors import ErrorNombreVacio, ErrorTelefonoMuyLargo, ErrorTelefonoNoNumerico, ErrorCorreoInvalido, IDVacia, IDNoEncontrado, CategoriaNoExistente
 
 class GestorDeContactos:
     def __init__(self, usuario: Usuario):
         self.usuario = usuario
 
+    def ver_contactos(self) -> list[Contacto]:
+        return self.usuario.contactos
+
     def agregar_contacto(self, id: int, nombre: str, telefono: str, email: str = '', direccion: str = '', categoria: str = 'Sin asignar') -> Contacto:
-        pass
+        if not nombre:
+            raise ErrorNombreVacio()
+        if not telefono.isdigit():
+            raise ErrorTelefonoNoNumerico()
+        if len(telefono) > 15:
+            raise ErrorTelefonoMuyLargo()
+        if email and "@" not in email:
+            raise ErrorCorreoInvalido()
+
+        contacto = Contacto(id, nombre, telefono, email, direccion, categoria)
+        self.usuario.contactos.append(contacto)
+        return contacto
 
     def eliminar_contacto(self, id: int) -> None:
-        pass
+        if id == None or id == '':
+            raise IDVacia(f'El ID no puede estar vacío')
+
+        for contacto in self.usuario.contactos:
+            if contacto.id == id:
+                self.usuario.contactos.remove(contacto)
+            return None
+        else:
+            raise IDNoEncontrado(f"Contacto con ID {id} no encontrado.")
 
     def editar_contacto(self, id: int, nombre: str, telefono: str, email: str, direccion: str, categoria: str) -> None:
-        pass
+        if id == None or id == '':
+            raise IDVacia(f'El ID no puede estar vacío')
+        if not telefono.isdigit():
+            raise ErrorTelefonoNoNumerico()
+        if len(telefono) > 15:
+            raise ErrorTelefonoMuyLargo()
+        if email and "@" not in email:
+            raise ErrorCorreoInvalido()
+        if categoria not in ['Personal', 'Trabajo', 'Sin asignar']:
+            raise CategoriaNoExistente()
+        
+        for contacto in self.usuario.contactos:
+            if contacto.id == id:
+                contacto.nombre = nombre if nombre else contacto.nombre
+                contacto.telefono = telefono if telefono else contacto.telefono
+                contacto.email = email if email else contacto.email
+                contacto.direccion = direccion if direccion else contacto.direccion
+                contacto.categoria = categoria if categoria else contacto.categoria
+                return None
+        else:
+            raise IDNoEncontrado(f"Contacto con ID {id} no encontrado.")
 
-    def buscar_contacto(self) -> list[Contacto]:
-        pass
+    def buscar_contacto(self, nombre: str) -> list[Contacto]:
+        if not nombre:
+            raise ErrorNombreVacio()
+        
+        return [contacto for contacto in self.usuario.contactos if nombre.lower() in contacto.nombre.lower()]
 
-    def filtrar_contacto(self) -> list[Contacto]:
-        pass
+
+    def filtrar_contacto(self, categoria: str) -> list[Contacto]:
+        if categoria not in ['Personal', 'Trabajo', 'Sin asignar']:
+            raise CategoriaNoExistente()
+        
+        return [contacto for contacto in self.usuario.contactos if contacto.categoria == categoria]
