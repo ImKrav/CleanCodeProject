@@ -1,6 +1,10 @@
 # Gestor de Contactos
 El objetivo de este proyecto es desarrollar una aplicación para la gestión de contactos personales y profesionales, permitiendo almacenar, organizar y manipular información de manera eficiente.
 
+## Integrantes
+
+- [Alejandro Bermudez Bedoya](https://github.com/ImKrav)
+- [Juan David Mosquera Garcia](https://github.com/SHURECITO)
 
 ## Diagrama de Clases
 ![Diagrama de Clases](https://github.com/ImKrav/CleanCodeProject/blob/main/assets/DiagramaDeClases.png?raw=true)
@@ -70,7 +74,7 @@ El objetivo de este proyecto es desarrollar una aplicación para la gestión de 
 | # | Descripción | Resultado |
 |---|------------|-----------|
 | 1 | Filtrar contactos con un nombre de 50 caracteres. | Contactos filtrados correctamente |
-| 2 | Filtrar contactos con una categoría vacía. | Contactos filtrados correctamente (filtrados automáticamente por "Sin asignar") |
+| 2 | Filtrar contactos con una categoría vacía. | Contactos filtrados correctamente |
 | 3 | Filtrar contactos con un nombre con caracteres especiales. | Contactos filtrados correctamente. |
 
 #### ❌ Casos de Error
