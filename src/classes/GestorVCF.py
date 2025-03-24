@@ -1,3 +1,4 @@
+import os
 from src.classes.Contacto import Contacto
 from src.classes.Usuario import Usuario
 from src.errors import ErrorListaVaciaDeContactos, ErrorArchivoCorrupto, ErrorNoVCF, ErrorPermisosDeEscritura
@@ -11,6 +12,10 @@ class GestorVCF:
             raise ErrorListaVaciaDeContactos("La lista de contactos está vacía.")
         if not archivo.endswith(".vcf"):
             raise ErrorNoVCF("El archivo debe tener la extensión .vcf.")
+        if os.path.exists(archivo) and not os.access(archivo, os.W_OK):
+            raise ErrorPermisosDeEscritura("No tienes permisos de escritura en el directorio de destino.")
+        if not os.access(os.path.dirname(archivo) or ".", os.W_OK):
+            raise ErrorPermisosDeEscritura("No tienes permisos de escritura en el directorio de destino.")
 
         try:
             with open(archivo, "w", encoding="utf-8") as file:
@@ -23,25 +28,29 @@ class GestorVCF:
             raise Exception(f"Error inesperado al exportar contactos: {e}")
 
     def importar_contactos(self, archivo: str) -> list[Contacto]:
-        if not archivo.endswith(".vcf"):
-            raise ErrorNoVCF("El archivo debe tener la extensión .vcf.")
-
-        contactos_importados = []
-        try:
-            with open(archivo, "r", encoding="utf-8") as file:
-                contenido = file.read()
-                contactos_raw = contenido.split("END:VCARD")
-                for contacto_raw in contactos_raw:
-                    if contacto_raw.strip():
-                        contacto = self._parsear_contacto_vcf(contacto_raw + "END:VCARD")
-                        contactos_importados.append(contacto)
-            print(f"Contactos importados exitosamente desde '{archivo}'.")
-            return contactos_importados
-        except FileNotFoundError:
-            raise ErrorArchivoCorrupto("El archivo no existe o está corrupto.")
-        except Exception as e:
-            raise Exception(f"Error inesperado al importar contactos: {e}")
-
+            if not archivo.endswith(".vcf"):
+                raise ErrorNoVCF("El archivo debe tener la extensión .vcf.")
+    
+            contactos_importados = []
+            try:
+                with open(archivo, "r", encoding="utf-8") as file:
+                    contenido = file.read()
+                    contactos_raw = contenido.split("END:VCARD")
+                    for contacto_raw in contactos_raw:
+                        if contacto_raw.strip():
+                            contacto = self._parsear_contacto_vcf(contacto_raw + "END:VCARD")
+                            contactos_importados.append(contacto)
+                
+                # Agregar los contactos importados al usuario
+                self.usuario.contactos.extend(contactos_importados)
+                
+                print(f"Contactos importados exitosamente desde '{archivo}'.")
+                return contactos_importados
+            except FileNotFoundError:
+                raise ErrorArchivoCorrupto("El archivo no existe o está corrupto.")
+            except Exception as e:
+                raise Exception(f"Error inesperado al importar contactos: {e}")
+            
     def _formatear_contacto_vcf(self, contacto: Contacto) -> str:
         """Convierte un contacto en formato VCF."""
         return (

@@ -3,6 +3,7 @@ from src.classes.Usuario import Usuario
 from src.classes.GestorDeContactos import GestorDeContactos
 from src.errors import ErrorNombreVacio, CategoriaNoExistente
 
+
 # CASOS NORMALES
 def test_filtrar_contactos_nombre_exacto():
     usuario = Usuario(1, "user", "user@email.com", "anotherpass")
@@ -20,10 +21,10 @@ def test_filtrar_contactos_categoria():
     for contacto in contactos:
         assert contacto.categoria == "Personal"
 
-def test_filtrar_contactos_nombre_parcial():
+def test_filtrar_contactos_nombre_y_categoria():
     usuario = Usuario(1, "user", "user@email.com", "anotherpass")
     gestor = GestorDeContactos(usuario)
-    contactos = gestor.filtrar_contacto(nombre="Juan")
+    contactos = gestor.filtrar_contacto(nombre="Juan", categoria="Personal")
     
     for contacto in contactos:
         assert "Juan" in contacto.nombre
@@ -42,10 +43,10 @@ def test_filtrar_contactos_nombre_largo():
 def test_filtrar_contactos_categoria_vacia():
     usuario = Usuario(1, "user", "user@email.com", "anotherpass")
     gestor = GestorDeContactos(usuario)
-    contactos = gestor.filtrar_contacto(categoria="")
+    contactos = gestor.filtrar_contacto(nombre="Antonio")
     
     for contacto in contactos:
-        assert contacto.categoria == "Sin asignar"
+        assert contacto.nombre == "Antonio"
 
 def test_filtrar_contactos_nombre_caracteres_especiales():
     usuario = Usuario(1, "user", "user@email.com", "anotherpass")
@@ -58,12 +59,12 @@ def test_filtrar_contactos_nombre_caracteres_especiales():
 
 
 # CASOS DE ERROR
-def test_filtrar_contactos_nombre_vacio():
+def test_filtrar_contactos_sin_datos():
     usuario = Usuario(1, "user", "user@email.com", "anotherpass")
     gestor = GestorDeContactos(usuario)
     
-    with pytest.raises(ErrorNombreVacio):
-        gestor.filtrar_contacto(nombre="")
+    with pytest.raises(ValueError):
+        gestor.filtrar_contacto(nombre="", categoria="")
 
 def test_filtrar_contactos_categoria_inexistente():
     usuario = Usuario(1, "user", "user@email.com", "anotherpass")

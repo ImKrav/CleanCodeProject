@@ -1,0 +1,40 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Contacto 0
+TEL:123456789
+EMAIL:contacto@email.com
+ADR:Calle Falsa 123
+CATEGORY:Trabajo
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Contacto 1
+TEL:123456789
+EMAIL:contacto@email.com
+ADR:Calle Falsa 123
+CATEGORY:Trabajo
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Contacto 2
+TEL:123456789
+EMAIL:contacto@email.com
+ADR:Calle Falsa 123
+CATEGORY:Trabajo
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Contacto 3
+TEL:123456789
+EMAIL:contacto@email.com
+ADR:Calle Falsa 123
+CATEGORY:Trabajo
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+FN:Contacto 4
+TEL:123456789
+EMAIL:contacto@email.com
+ADR:Calle Falsa 123
+CATEGORY:Trabajo
+END:VCARD

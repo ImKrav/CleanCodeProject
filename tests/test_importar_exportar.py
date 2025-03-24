@@ -5,18 +5,19 @@ from src.classes.Contacto import Contacto
 from src.classes.GestorVCF import GestorVCF
 from src.errors import ErrorListaVaciaDeContactos, ErrorArchivoCorrupto, ErrorNoVCF, ErrorPermisosDeEscritura
 
+
 # CASOS NORMALES
 def test_exportar_lista_con_5_contactos():
     usuario = Usuario(1, "user", "user@email.com", "anotherpass")
     gestor = GestorVCF(usuario)
     usuario.contactos = [Contacto(i, f"Contacto {i}", "123456789", "contacto@email.com", "Calle Falsa 123", "Trabajo") for i in range(5)]
-    gestor.exportar_contactos(usuario.contactos, "contactos.vcf")
-    assert os.path.exists("contactos.vcf")
+    gestor.exportar_contactos(usuario.contactos, "VCF/export/contactos.vcf")
+    assert os.path.exists("VCF/export/contactos.vcf")
 
 def test_importar_archivo_vcf_valido_con_3_contactos():
     usuario = Usuario(1, "user", "user@email.com", "anotherpass")
     gestor = GestorVCF(usuario)
-    gestor.importar_contactos("3_contactos.vcf")
+    gestor.importar_contactos("VCF/import/3_contactos.vcf")
     assert len(usuario.contactos) == 3
 
 def test_exportar_contactos_con_caracteres_especiales():
@@ -27,8 +28,8 @@ def test_exportar_contactos_con_caracteres_especiales():
         Contacto(2, "María", "987654321", "maria@email.com", "Calle B", "Amigos"),
         Contacto(3, "El Triple #$%&", "555123456", "triple@email.com", "Calle C", "Personal"),
     ]
-    gestor.exportar_contactos(usuario.contactos, "contactos_especiales.vcf")
-    assert os.path.exists("contactos_especiales.vcf")
+    gestor.exportar_contactos(usuario.contactos, "VCF/export/contactos_especiales.vcf")
+    assert os.path.exists("VCF/export/contactos_especiales.vcf")
 
 
 # CASOS EXTREMOS
@@ -36,13 +37,13 @@ def test_exportar_lista_con_1000_contactos():
     usuario = Usuario(1, "user", "user@email.com", "anotherpass")
     gestor = GestorVCF(usuario)
     usuario.contactos = [Contacto(i, f"Contacto {i}", "123456789", "contacto@email.com", "Calle Falsa 123", "Trabajo") for i in range(1000)]
-    gestor.exportar_contactos(usuario.contactos, "contactos_1000.vcf")
-    assert os.path.exists("contactos_1000.vcf")
+    gestor.exportar_contactos(usuario.contactos, "VCF/export/contactos_1000.vcf")
+    assert os.path.exists("VCF/export/contactos_1000.vcf")
 
 def test_importar_archivo_vcf_con_500_contactos():
-    usuario = Usuario(1, "user", "user@email.com", "anotherpass")
+    usuario = Usuario(2, "user", "user@email.com", "anotherpass")
     gestor = GestorVCF(usuario)
-    gestor.importar_contactos("500_contactos.vcf")
+    gestor.importar_contactos("VCF/import/500_contactos.vcf")
     assert len(usuario.contactos) == 500
 
 def test_exportar_lista_vacia_de_contactos():

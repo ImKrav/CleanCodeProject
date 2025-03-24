@@ -18,6 +18,8 @@ class GestorDeContactos:
             raise ErrorTelefonoMuyLargo()
         if email and "@" not in email:
             raise ErrorCorreoInvalido()
+        if categoria not in ['Personal', 'Trabajo', 'Sin asignar']:
+            raise CategoriaNoExistente()
 
         contacto = Contacto(id, nombre, telefono, email, direccion, categoria)
         self.usuario.contactos.append(contacto)
@@ -37,6 +39,8 @@ class GestorDeContactos:
     def editar_contacto(self, id: int, nombre: str, telefono: str, email: str, direccion: str, categoria: str) -> None:
         if id == None or id == '':
             raise IDVacia(f'El ID no puede estar vacío')
+        if nombre == '' or not nombre:
+            raise ErrorNombreVacio()
         if not telefono.isdigit():
             raise ErrorTelefonoNoNumerico()
         if len(telefono) > 15:
@@ -64,8 +68,20 @@ class GestorDeContactos:
         return [contacto for contacto in self.usuario.contactos if nombre.lower() in contacto.nombre.lower()]
 
 
-    def filtrar_contacto(self, categoria: str) -> list[Contacto]:
-        if categoria not in ['Personal', 'Trabajo', 'Sin asignar']:
-            raise CategoriaNoExistente()
-        
-        return [contacto for contacto in self.usuario.contactos if contacto.categoria == categoria]
+    def filtrar_contacto(self, nombre: str = None, categoria: str = None) -> list[Contacto]:
+            if nombre is not None and not isinstance(nombre, str):
+                raise TypeError("El argumento 'nombre' debe ser una cadena de texto (str).")
+            if categoria is not None and not isinstance(categoria, str):
+                raise TypeError("El argumento 'categoria' debe ser una cadena de texto (str).")
+            
+            if not nombre and not categoria:
+                raise ValueError("Debes proporcionar al menos un argumento: nombre o categoría.")
+            
+            if categoria and categoria not in ['Personal', 'Trabajo', 'Sin asignar']:
+                raise CategoriaNoExistente()
+            
+            return [
+                contacto for contacto in self.usuario.contactos
+                if (not nombre or nombre.lower() in contacto.nombre.lower()) and
+                   (not categoria or contacto.categoria == categoria)
+            ]

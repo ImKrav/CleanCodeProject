@@ -3,11 +3,12 @@ from src.classes.Usuario import Usuario
 from src.classes.GestorDeContactos import GestorDeContactos
 from src.errors import ErrorNombreVacio, ErrorTelefonoNoNumerico, ErrorCorreoInvalido, ErrorTelefonoMuyLargo
 
+
 # CASOS NORMALES
 def test_crear_contacto_normal():
     usuario = Usuario(1, "user", "user@email.com", "anotherpass")
     gestor = GestorDeContactos(usuario)
-    contacto = gestor.agregar_contacto(1, "Juan Perez", "123456", "juanperez@gmail.com", "Calle 123", "Profesional")
+    contacto = gestor.agregar_contacto(1, "Juan Perez", "123456", "juanperez@gmail.com", "Calle 123", "Trabajo")
     assert contacto in usuario.contactos
 
 def test_crear_contacto_minimo():
@@ -27,19 +28,19 @@ def test_crear_contacto_sin_categoria():
 def test_crear_contacto_nombre_largo():
     usuario = Usuario(1, "user", "user@email.com", "anotherpass")
     gestor = GestorDeContactos(usuario)
-    contacto = gestor.agregar_contacto(1, 'J' * 100, '123456', 'juanperez@gmail.com', 'Calle 123', 'Profesional')
+    contacto = gestor.agregar_contacto(1, 'J' * 100, '123456', 'juanperez@gmail.com', 'Calle 123', 'Trabajo')
     assert contacto in usuario.contactos
 
 def test_crear_contacto_telefono_largo():
     usuario = Usuario(1, "user", "user@email.com", "anotherpass")
     gestor = GestorDeContactos(usuario)
     with pytest.raises(ErrorTelefonoMuyLargo):
-        gestor.agregar_contacto(1, 'Juan Perez', '98172398172983712983', 'juanperez@gmail.com', 'Calle 123', 'Profesional')
+        gestor.agregar_contacto(1, 'Juan Perez', '98172398172983712983', 'juanperez@gmail.com', 'Calle 123', 'Trabajo')
 
 def test_crear_contacto_email_largo():
     usuario = Usuario(1, "user", "user@email.com", "anotherpass")
     gestor = GestorDeContactos(usuario)
-    contacto = gestor.agregar_contacto(1, 'Juan Perez', '123456', 'j' * 200 + '@gmail.com', 'Calle 123', 'Profesional')
+    contacto = gestor.agregar_contacto(1, 'Juan Perez', '123456', 'j' * 200 + '@gmail.com', 'Calle 123', 'Trabajo')
     assert contacto in usuario.contactos
 
 
