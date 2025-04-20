@@ -1,4 +1,4 @@
-from view.app import MainApp
+from src.view.app import MainApp
 
 def main():
     print("Iniciando la interfaz gráfica...")

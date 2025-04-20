@@ -1,7 +1,7 @@
 import os
-from src.classes.contacto import Contacto
-from src.classes.usuario import Usuario
-from src.errors import ErrorListaVaciaDeContactos, ErrorArchivoCorrupto, ErrorNoVCF, ErrorPermisosDeEscritura
+from src.model.classes.contacto import Contacto
+from src.model.classes.usuario import Usuario
+from src.model.errors import ErrorListaVaciaDeContactos, ErrorArchivoCorrupto, ErrorNoVCF, ErrorPermisosDeEscritura
 
 class GestorVCF:
     """

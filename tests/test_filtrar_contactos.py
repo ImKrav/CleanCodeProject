@@ -1,7 +1,7 @@
 import pytest
-from src.classes.usuario import Usuario
-from src.classes.gestor_de_contactos import GestorDeContactos
-from src.errors import ErrorNombreVacio, CategoriaNoExistente
+from src.model.classes.usuario import Usuario
+from src.model.classes.gestor_de_contactos import GestorDeContactos
+from src.model.errors import ErrorNombreVacio, CategoriaNoExistente
 
 
 # CASOS NORMALES

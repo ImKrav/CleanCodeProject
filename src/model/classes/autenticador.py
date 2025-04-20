@@ -1,15 +1,11 @@
-from src.classes.usuario import Usuario
-from src.errors import ErrorContrasenaMuyLarga, ErrorContrasenaVacia, ErrorContrasenaIncorrecta, ErrorCorreoInvalido, EmailYaExistente, UsuarioNoExistente, LoginEspacioVacio
+from src.model.classes.usuario import Usuario
+from src.model.errors import ErrorContrasenaMuyLarga, ErrorContrasenaVacia, ErrorContrasenaIncorrecta, ErrorCorreoInvalido, EmailYaExistente, UsuarioNoExistente, LoginEspacioVacio
 
 class Autenticador:
+    usuarios = []
     """
-    Gestiona el registro e inicio de sesión de usuarios.
+    Gestiona el registro e inicio de sesión de usuarios. Variable global de usuarios.
     """
-    def __init__(self):
-        """
-        Inicializa la lista interna de usuarios registrados.
-        """
-        self.usuarios = []
 
     def registrar_usuario(self, usuario: Usuario) -> Usuario:
         """

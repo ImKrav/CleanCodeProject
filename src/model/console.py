@@ -1,9 +1,9 @@
-from src.classes.autenticador import Autenticador
-from src.classes.gestor_de_contactos import GestorDeContactos
-from src.classes.usuario import Usuario
-from src.classes.contacto import Contacto
-from src.classes.gestor_vcf import GestorVCF
-from src.errors import (
+from src.model.classes.autenticador import Autenticador
+from src.model.classes.gestor_de_contactos import GestorDeContactos
+from src.model.classes.usuario import Usuario
+from src.model.classes.contacto import Contacto
+from src.model.classes.gestor_vcf import GestorVCF
+from src.model.errors import (
     ErrorListaVaciaDeContactos,
     ErrorArchivoCorrupto,
     ErrorNoVCF,

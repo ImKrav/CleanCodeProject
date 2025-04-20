@@ -1,7 +1,7 @@
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.screenmanager import Screen
-from src.classes.autenticador import Autenticador
-from src.errors import UsuarioNoExistente, ErrorContrasenaIncorrecta, LoginEspacioVacio
+from src.model.classes.autenticador import Autenticador
+from src.model.errors import UsuarioNoExistente, ErrorContrasenaIncorrecta, LoginEspacioVacio
 
 class Login(Screen):
     def __init__(self, **kwargs):

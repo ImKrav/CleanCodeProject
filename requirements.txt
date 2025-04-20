@@ -1,3 +1,6 @@
-# Kivy core
+# pytest
+pytest
+
+# Kivy
 kivy[full]
 kivymd

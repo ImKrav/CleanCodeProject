@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from src.classes.contacto import Contacto
+from src.model.classes.contacto import Contacto
 
 @dataclass
 class Usuario:

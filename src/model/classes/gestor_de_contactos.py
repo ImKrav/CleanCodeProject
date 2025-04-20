@@ -1,6 +1,6 @@
-from src.classes.usuario import Usuario
-from src.classes.contacto import Contacto
-from src.errors import ErrorNombreVacio, ErrorTelefonoMuyLargo, ErrorTelefonoNoNumerico, ErrorCorreoInvalido, IDVacia, IDNoEncontrado, CategoriaNoExistente
+from src.model.classes.usuario import Usuario
+from src.model.classes.contacto import Contacto
+from src.model.errors import ErrorNombreVacio, ErrorTelefonoMuyLargo, ErrorTelefonoNoNumerico, ErrorCorreoInvalido, IDVacia, IDNoEncontrado, CategoriaNoExistente
 
 class GestorDeContactos:
     """

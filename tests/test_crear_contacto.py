@@ -1,8 +1,13 @@
 import pytest
-from src.classes.contacto import Contacto
-from src.classes.usuario import Usuario
-from src.classes.gestor_de_contactos import GestorDeContactos
-from src.errors import ErrorNombreVacio, ErrorTelefonoNoNumerico, ErrorCorreoInvalido, ErrorTelefonoMuyLargo
+from src.model.classes.contacto import Contacto
+from src.model.classes.usuario import Usuario
+from src.model.classes.gestor_de_contactos import GestorDeContactos
+from src.model.errors import (
+    ErrorNombreVacio,
+    ErrorTelefonoNoNumerico,
+    ErrorCorreoInvalido,
+    ErrorTelefonoMuyLargo,
+)
 
 # CASOS NORMALES
 def test_crear_contacto_normal():

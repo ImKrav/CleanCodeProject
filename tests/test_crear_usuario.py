@@ -1,7 +1,7 @@
 import pytest
-from src.classes.autenticador import Autenticador
-from src.classes.usuario import Usuario
-from src.errors import ErrorCorreoInvalido, ErrorContrasenaVacia, EmailYaExistente, ErrorContrasenaMuyLarga
+from src.model.classes.autenticador import Autenticador
+from src.model.classes.usuario import Usuario
+from src.model.errors import ErrorCorreoInvalido, ErrorContrasenaVacia, EmailYaExistente, ErrorContrasenaMuyLarga
 
 @pytest.fixture
 def autenticador():
