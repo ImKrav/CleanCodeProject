@@ -1,17 +1,35 @@
-from src.classes.Autenticador import Autenticador
-from src.classes.GestorDeContactos import GestorDeContactos
-from src.classes.Usuario import Usuario
-from src.classes.Contacto import Contacto
-from src.classes.GestorVCF import GestorVCF
+from src.classes.autenticador import Autenticador
+from src.classes.gestor_de_contactos import GestorDeContactos
+from src.classes.usuario import Usuario
+from src.classes.contacto import Contacto
+from src.classes.gestor_vcf import GestorVCF
 from src.errors import ErrorListaVaciaDeContactos, ErrorArchivoCorrupto, ErrorNoVCF, ErrorPermisosDeEscritura, ErrorNombreVacio, CategoriaNoExistente, IDNoEncontrado
 
 def mostrar_menu_principal():
+    """
+    Muestra por pantalla las opciones del menú principal:
+      1. Registrarse
+      2. Iniciar sesión
+      3. Salir
+    """
     print("\n--- Menú Principal ---")
     print("1. Registrarse")
     print("2. Iniciar sesión")
     print("3. Salir")
 
 def mostrar_menu_funcionalidades():
+    """
+    Muestra por pantalla las opciones del menú de funcionalidades
+    para el usuario autenticado:
+      1. Crear un contacto
+      2. Editar un contacto
+      3. Ver la lista de contactos
+      4. Buscar un contacto
+      5. Filtrar contactos
+      6. Exportar contactos
+      7. Importar contactos
+      8. Cerrar sesión
+    """
     print("\n--- Menú de Funcionalidades ---")
     print("1. Crear un contacto")
     print("2. Editar un contacto")
@@ -23,6 +41,11 @@ def mostrar_menu_funcionalidades():
     print("8. Cerrar sesión")
 
 def main():
+    """
+    Punto de entrada de la aplicación.
+    Controla el flujo de navegación entre el menú principal y el de funcionalidades,
+    maneja registro, login y operaciones sobre contactos.
+    """
     autenticador = Autenticador()
     gestor_contactos = None
     usuario_actual = None

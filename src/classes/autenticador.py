@@ -1,11 +1,33 @@
-from src.classes.Usuario import Usuario
+from src.classes.usuario import Usuario
 from src.errors import ErrorContrasenaMuyLarga, ErrorContrasenaVacia, ErrorContrasenaIncorrecta, ErrorCorreoInvalido, EmailYaExistente, UsuarioNoExistente, LoginEspacioVacio
 
 class Autenticador:
+    """
+    Gestiona el registro e inicio de sesión de usuarios.
+    """
     def __init__(self):
+        """
+        Inicializa la lista interna de usuarios registrados.
+        """
         self.usuarios = []
 
-    def registrar_usuario(self, usuario : Usuario) -> Usuario:
+    def registrar_usuario(self, usuario: Usuario) -> Usuario:
+        """
+        Valida y registra un nuevo usuario.
+
+        Args:
+            usuario (Usuario): instancia de Usuario a registrar.
+
+        Raises:
+            ErrorContrasenaVacia: si la contraseña está vacía.
+            ErrorContrasenaMuyLarga: si la contraseña excede 15 caracteres.
+            EmailYaExistente: si el email ya está registrado.
+            ErrorCorreoInvalido: si el email no contiene '@'.
+
+        Return:
+            Usuario: el usuario registrado.
+        """
+
         usuario.email = usuario.email.lower() 
         if usuario.password == '':
             raise ErrorContrasenaVacia(f'La contraseña no puede estar vacía')
@@ -20,6 +42,23 @@ class Autenticador:
         return usuario
 
     def iniciar_sesion(self, email, password) -> bool:
+        """
+        Autentica un usuario existente.
+
+        Args:
+            email (str): correo electrónico del usuario.
+            password (str): contraseña proporcionada.
+
+        Raises:
+            ErrorContrasenaMuyLarga: si la contraseña excede 15 caracteres.
+            ErrorContrasenaVacia: si la contraseña está vacía.
+            LoginEspacioVacio: si el email está vacío.
+            ErrorContrasenaIncorrecta: si la contraseña no coincide.
+            UsuarioNoExistente: si no se encuentra el email.
+
+        Return:
+            bool: True si la autenticación es exitosa, false si no es exitoda.
+        """
         email = email.lower()
 
         if len(password) > 15:
