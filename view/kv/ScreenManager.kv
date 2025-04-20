@@ -1,0 +1,188 @@
+#:kivy 2.1.0
+
+ScreenManager:
+    FirstScreen:
+    Login:
+    Signup:
+    MainScreen:
+
+<FirstScreen>:
+    name: "first"
+    BoxLayout:
+        orientation: "vertical"
+        padding: 20
+        spacing: 10
+
+        Label:
+            text: "Bienvenido al Gestor de Contactos"
+            font_size: 24
+            size_hint_y: None
+            height: 50
+
+        Button:
+            text: "Iniciar Sesión"
+            size_hint_y: None
+            height: 50
+            on_press: app.root.current = "login"
+
+        Button:
+            text: "Registrarse"
+            size_hint_y: None
+            height: 50
+            on_press: app.root.current = "signup"
+
+<Login>:
+    name: "login"
+    BoxLayout:
+        orientation: "vertical"
+        padding: 20
+        spacing: 10
+
+        Label:
+            text: "Iniciar Sesión"
+            font_size: 24
+            size_hint_y: None
+            height: 50
+
+        TextInput:
+            id: email_input
+            hint_text: "Correo Electrónico"
+            multiline: False
+            size_hint_y: None
+            height: 40
+
+        TextInput:
+            id: password_input
+            hint_text: "Contraseña"
+            password: True
+            multiline: False
+            size_hint_y: None
+            height: 40
+
+        Button:
+            text: "Iniciar Sesión"
+            size_hint_y: None
+            height: 50
+            on_press: root.iniciar_sesion(email_input.text, password_input.text)
+
+        Button:
+            text: "Volver"
+            size_hint_y: None
+            height: 50
+            on_press: app.root.current = "first"
+
+        Label:
+            id: error_label
+            text: ""
+            color: (1, 0, 0, 1)
+            size_hint_y: None
+            height: 40
+
+<Signup>:
+    name: "signup"
+    BoxLayout:
+        orientation: "vertical"
+        padding: 20
+        spacing: 10
+
+        Label:
+            text: "Registrarse"
+            font_size: 24
+            size_hint_y: None
+            height: 50
+
+        TextInput:
+            id: name_input
+            hint_text: "Nombre de Usuario"
+            multiline: False
+            size_hint_y: None
+            height: 40
+
+        TextInput:
+            id: email_input
+            hint_text: "Correo Electrónico"
+            multiline: False
+            size_hint_y: None
+            height: 40
+
+        TextInput:
+            id: password_input
+            hint_text: "Contraseña"
+            password: True
+            multiline: False
+            size_hint_y: None
+            height: 40
+
+        Button:
+            text: "Registrarse"
+            size_hint_y: None
+            height: 50
+            on_press: root.registrarse(name_input.text, email_input.text, password_input.text)
+
+        Button:
+            text: "Volver"
+            size_hint_y: None
+            height: 50
+            on_press: app.root.current = "first"
+
+        Label:
+            id: error_label
+            text: ""
+            color: (1, 0, 0, 1)
+            size_hint_y: None
+            height: 40
+
+<MainScreen>:
+    name: "main"
+    BoxLayout:
+        orientation: "vertical"
+        padding: 20
+        spacing: 10
+
+        Label:
+            text: "Menú Principal"
+            font_size: 24
+            size_hint_y: None
+            height: 50
+
+        Button:
+            text: "Crear un contacto"
+            size_hint_y: None
+            height: 50
+            on_press: root.crear_contacto()
+
+        Button:
+            text: "Editar un contacto"
+            size_hint_y: None
+            height: 50
+            on_press: root.editar_contacto()
+
+        Button:
+            text: "Ver lista de contactos"
+            size_hint_y: None
+            height: 50
+            on_press: root.ver_contactos()
+
+        Button:
+            text: "Buscar un contacto"
+            size_hint_y: None
+            height: 50
+            on_press: root.buscar_contacto()
+
+        Button:
+            text: "Filtrar contactos"
+            size_hint_y: None
+            height: 50
+            on_press: root.filtrar_contactos()
+
+        Button:
+            text: "Exportar contactos"
+            size_hint_y: None
+            height: 50
+            on_press: root.exportar_contactos()
+
+        Button:
+            text: "Cerrar sesión"
+            size_hint_y: None
+            height: 50
+            on_press: app.root.current = "first"
