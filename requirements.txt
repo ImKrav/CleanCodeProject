@@ -1,0 +1,3 @@
+# Kivy core
+kivy[full]
+kivymd

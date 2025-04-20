@@ -1,0 +1,41 @@
+#:kivy 2.1.0
+
+<Login>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 20
+        spacing: 10
+
+        Label:
+            text: "Iniciar Sesión"
+            font_size: 24
+            size_hint_y: None
+            height: 50
+
+        TextInput:
+            id: email_input
+            hint_text: "Correo Electrónico"
+            multiline: False
+            size_hint_y: None
+            height: 40
+
+        TextInput:
+            id: password_input
+            hint_text: "Contraseña"
+            password: True
+            multiline: False
+            size_hint_y: None
+            height: 40
+
+        Button:
+            text: "Iniciar Sesión"
+            size_hint_y: None
+            height: 50
+            on_press: root.iniciar_sesion(email_input.text, password_input.text)
+
+        Label:
+            id: error_label
+            text: ""
+            color: (1, 0, 0, 1)
+            size_hint_y: None
+            height: 40
