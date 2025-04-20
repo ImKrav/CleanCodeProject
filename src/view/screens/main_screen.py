@@ -18,3 +18,9 @@ class MainScreen(Screen):
 
     def exportar_contactos(self):
         print("Función para exportar contactos")
+
+    def importar_contactos(self):
+        print("Función para importar contactos")
+
+    def cerrar_sesion(self):
+        self.manager.current = "login"  # Regresa a la pantalla de inicio de sesión

@@ -12,7 +12,8 @@ class Login(Screen):
         try:
             if self.autenticador.iniciar_sesion(email, password):
                 self.ids.error_label.text = "Inicio de sesión exitoso"
-                self.ids.error_label.color = (0, 1, 0, 1)  # Verde
+                self.ids.error_label.color = (0, 1, 0, 1)
+                self.manager.current = "main"
         except UsuarioNoExistente:
             self.ids.error_label.text = "Error: El usuario no existe"
         except ErrorContrasenaIncorrecta:
