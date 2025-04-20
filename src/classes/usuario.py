@@ -1,9 +1,12 @@
+from dataclasses import dataclass, field
 from src.classes.contacto import Contacto
 
+@dataclass
 class Usuario:
+    
     """
     Representa un usuario de la aplicación.
-
+    ---------------------------------------------------------
     Atributos:
         id (int): Identificador único.
         nombre (str): Nombre de usuario.
@@ -11,23 +14,12 @@ class Usuario:
         password (str): Contraseña.
         contactos (list[Contacto]): lista de contactos del usuario.
     """
-    def __init__(self, id: int, nombre: str, email: str, password: str):
-        """
-        Inicializa un nuevo usuario a partir de un diccionario.
 
-        Args:
-            data (dict): {
-                'id' (int): identificador único,
-                'nombre' (str): nombre de usuario,
-                'email' (str): correo electrónico,
-                'password' (str): contraseña
-            }
-        """
-        self.id = id
-        self.nombre = nombre
-        self.email = email
-        self.password = password
-        self.contactos : list[Contacto] = []
+    id: int
+    nombre: str
+    email: str
+    password: str
+    contactos: list[Contacto] = field(default_factory=list)
 
     def __repr__(self):
         """

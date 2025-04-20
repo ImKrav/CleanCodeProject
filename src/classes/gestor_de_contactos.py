@@ -23,18 +23,12 @@ class GestorDeContactos:
         """
         return self.usuario.contactos
 
-    def agregar_contacto(self, id: int, nombre: str, telefono: str, email: str = '', direccion: str = '', categoria: str = 'Sin asignar') -> Contacto:
+    def agregar_contacto(self, contacto: Contacto) -> Contacto:
         """
         Valida y agrega un nuevo contacto.
 
         Args:
-            data (dict): {
-                'nombre': str,
-                'telefono': str,
-                'email' (opcional): str,
-                'direccion' (opcional): str,
-                'categoria' (opcional): str
-            }
+           contacto (Contacto): instancia a agregar.
 
         Raises:
             ErrorNombreVacio, ErrorTelefonoNoNumerico, ErrorTelefonoMuyLargo,
@@ -43,18 +37,17 @@ class GestorDeContactos:
         Returns:
             Contacto: instancia creada y anexada a usuario.contactos.
         """
-        if not nombre:
+        if not contacto.nombre:
             raise ErrorNombreVacio()
-        if not telefono.isdigit():
+        if not contacto.telefono.isdigit():
             raise ErrorTelefonoNoNumerico()
-        if len(telefono) > 15:
+        if len(contacto.telefono) > 15:
             raise ErrorTelefonoMuyLargo()
-        if email and "@" not in email:
+        if contacto.email and "@" not in contacto.email:
             raise ErrorCorreoInvalido()
-        if categoria not in ['Personal', 'Trabajo', 'Sin asignar']:
+        if contacto.categoria not in ['Personal', 'Trabajo', 'Sin asignar']:
             raise CategoriaNoExistente()
 
-        contacto = Contacto(id, nombre, telefono, email, direccion, categoria)
         self.usuario.contactos.append(contacto)
         return contacto
 
@@ -78,19 +71,12 @@ class GestorDeContactos:
         else:
             raise IDNoEncontrado(f"Contacto con ID {id} no encontrado.")
 
-    def editar_contacto(self, id: int, nombre: str, telefono: str, email: str, direccion: str, categoria: str) -> None:
+    def editar_contacto(self, contacto_editado: Contacto) -> Contacto:
         """
         Actualiza campos de un contacto existente.
 
         Args:
-            id (int): identificador del contacto.
-            updates (dict): campos a modificar {
-                'nombre' (opcional): str,
-                'telefono' (opcional): str,
-                'email' (opcional): str,
-                'direccion' (opcional): str,
-                'categoria' (opcional): str
-            }
+            contacto_editado (Contacto): instancia con los campos a modificar.
 
         Raises:
             IDVacia, ErrorNombreVacio, ErrorTelefonoNoNumerico,
@@ -98,29 +84,27 @@ class GestorDeContactos:
             IDNoEncontrado
 
         Returns:
-            Contacto: instancia modificada.
+            Contacto: instancia editada.
         """
-        if id == None or id == '':
-            raise IDVacia(f'El ID no puede estar vacío')
-        if nombre == '' or not nombre:
-            raise ErrorNombreVacio()
-        if not telefono.isdigit():
+        if (contacto_editado.telefono != '') and (not contacto_editado.telefono.isdigit()):
             raise ErrorTelefonoNoNumerico()
-        if len(telefono) > 15:
+        if (contacto_editado.id == None) or (contacto_editado.id == ''):
+            raise IDVacia(f'El ID no puede estar vacío')
+        if len(contacto_editado.telefono) > 15:
             raise ErrorTelefonoMuyLargo()
-        if email and "@" not in email:
+        if contacto_editado.email and "@" not in contacto_editado.email:
             raise ErrorCorreoInvalido()
-        if categoria not in ['Personal', 'Trabajo', 'Sin asignar']:
+        if (contacto_editado.categoria !='') and (contacto_editado.categoria not in ['Personal', 'Trabajo', 'Sin asignar']):
             raise CategoriaNoExistente()
         
-        for contacto in self.usuario.contactos:
-            if contacto.id == id:
-                contacto.nombre = nombre if nombre else contacto.nombre
-                contacto.telefono = telefono if telefono else contacto.telefono
-                contacto.email = email if email else contacto.email
-                contacto.direccion = direccion if direccion else contacto.direccion
-                contacto.categoria = categoria if categoria else contacto.categoria
-                return None
+        for contacto_buscado in self.usuario.contactos:
+            if contacto_buscado.id == contacto_editado.id:
+                contacto_buscado.nombre = contacto_editado.nombre if contacto_editado.nombre else contacto_buscado.nombre
+                contacto_buscado.telefono = contacto_editado.telefono if contacto_editado.telefono else contacto_buscado.telefono
+                contacto_buscado.email = contacto_editado.email if contacto_editado.email else contacto_buscado.email
+                contacto_buscado.direccion = contacto_editado.direccion if contacto_editado.direccion else contacto_buscado.direccion
+                contacto_buscado.categoria = contacto_editado.categoria if contacto_editado.categoria else contacto_buscado.categoria
+                return contacto_buscado
         else:
             raise IDNoEncontrado(f"Contacto con ID {id} no encontrado.")
 

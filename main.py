@@ -96,8 +96,10 @@ def main():
                     email = input("Email: ")
                     direccion = input("Dirección: ")
                     categoria = input("Categoría (Personal, Trabajo, Sin asignar): ")
-                    contacto = gestor_contactos.agregar_contacto(id_contacto, nombre, telefono, email, direccion, categoria)
-                    print(f"Contacto '{contacto.nombre}' creado exitosamente.")
+                    if categoria == "":
+                        categoria = "Sin asignar"
+                    contacto = gestor_contactos.agregar_contacto(Contacto(id_contacto, nombre, telefono, email, direccion, categoria))
+                    print(f"Contacto '{contacto.id} - {contacto.nombre}' creado exitosamente.")
                 except Exception as e:
                     print(f"Error al crear contacto: {e}")
 
@@ -109,8 +111,8 @@ def main():
                     email = input("Nuevo email (dejar vacío para no cambiar): ")
                     direccion = input("Nueva dirección (dejar vacío para no cambiar): ")
                     categoria = input("Nueva categoría (dejar vacío para no cambiar): ")
-                    gestor_contactos.editar_contacto(id_contacto, nombre, telefono, email, direccion, categoria)
-                    print("Contacto actualizado exitosamente.")
+                    contacto = gestor_contactos.editar_contacto(Contacto(id_contacto, nombre, telefono, email, direccion, categoria))
+                    print(f"Contacto '{contacto.id} - {contacto.nombre}' actualizado exitosamente.")
                 except IDNoEncontrado:
                     print("Error: Contacto no encontrado.")
                 except Exception as e:
