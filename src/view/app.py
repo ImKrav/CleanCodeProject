@@ -1,3 +1,4 @@
+import traceback
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.uix.screenmanager import ScreenManager
@@ -23,3 +24,8 @@ class MainApp(App):
         sm.add_widget(Signup(name="signup"))
         sm.add_widget(MainScreen(name="main"))
         return sm
+
+    def handle_exception(self, exc_type, exc_value, exc_traceback):
+        """Manejador global de excepciones."""
+        error_message = "".join(traceback.format_exception(exc_type, exc_value, exc_traceback))
+        print(f"Error capturado:\n{error_message}")
