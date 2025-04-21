@@ -3,11 +3,9 @@ from src.model.classes.autenticador import Autenticador
 from src.model.classes.usuario import Usuario
 from src.model.errors import ErrorContrasenaMuyLarga, UsuarioNoExistente, ErrorContrasenaIncorrecta, LoginEspacioVacio
 
-
 @pytest.fixture
 def autenticador():
     return Autenticador()
-
 
 # CASOS NORMALES
 def test_iniciar_sesion_credenciales_correctas(autenticador):
@@ -20,7 +18,8 @@ def test_iniciar_sesion_credenciales_correctas(autenticador):
         Usuario(len(autenticador.usuarios) + 1, "Juan Perez", "juanperez@gmail.com", "password123")
     )
     usuario = autenticador.iniciar_sesion("juanperez@gmail.com", "password123")
-    assert usuario is True
+
+    assert (isinstance(usuario, Usuario)) and (usuario in autenticador.usuarios)
 
 def test_iniciar_sesion_email_mayusculas(autenticador):
     """
@@ -32,7 +31,7 @@ def test_iniciar_sesion_email_mayusculas(autenticador):
         Usuario(len(autenticador.usuarios) + 1, "Maria Lopez", "maria@gmail.com", "password456")
     )
     usuario = autenticador.iniciar_sesion("MARIA@GMAIL.COM", "password456")
-    assert usuario is True
+    assert (isinstance(usuario, Usuario)) and (usuario in autenticador.usuarios)
 
 def test_iniciar_sesion_despues_registrarse(autenticador):
     """
@@ -45,7 +44,7 @@ def test_iniciar_sesion_despues_registrarse(autenticador):
     )
     autenticador.registrar_usuario(usuario)
     resultado = autenticador.iniciar_sesion("pedro@gmail.com", "password789")
-    assert resultado is True
+    assert (isinstance(resultado, Usuario)) and (usuario in autenticador.usuarios)
 
 
 # CASOS EXTREMOS
@@ -76,7 +75,9 @@ def test_iniciar_sesion_muchos_usuarios(autenticador):
             f"password{i}"
         )
         autenticador.registrar_usuario(u)
-    assert autenticador.iniciar_sesion("usuario999@gmail.com", "password999") is True
+    
+    usuario = autenticador.iniciar_sesion("usuario999@gmail.com", "password999")
+    assert (isinstance(usuario, Usuario)) and (usuario in autenticador.usuarios)
 
 def test_iniciar_sesion_contrasena_caracteres_especiales(autenticador):
     """
@@ -89,7 +90,8 @@ def test_iniciar_sesion_contrasena_caracteres_especiales(autenticador):
         len(autenticador.usuarios) + 1, "Ana Diaz", "ana@gmail.com", password_especial
     )
     autenticador.registrar_usuario(usuario)
-    assert autenticador.iniciar_sesion("ana@gmail.com", password_especial) is True
+    usuario = autenticador.iniciar_sesion("ana@gmail.com", password_especial)
+    assert (isinstance(usuario, Usuario)) and (usuario in autenticador.usuarios)
 
 
 # CASOS DE ERROR

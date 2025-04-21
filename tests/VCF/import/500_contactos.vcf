@@ -1,4000 +1,1500 @@
 BEGIN:VCARD
-VERSION:3.0
+FN:Contacto 0
+END:VCARD
+BEGIN:VCARD
 FN:Contacto 1
-TEL:100000001
-EMAIL:contacto1@example.com
-ADR:Calle Falsa 1, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 2
-TEL:100000002
-EMAIL:contacto2@example.com
-ADR:Calle Falsa 2, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 3
-TEL:100000003
-EMAIL:contacto3@example.com
-ADR:Calle Falsa 3, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 4
-TEL:100000004
-EMAIL:contacto4@example.com
-ADR:Calle Falsa 4, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 5
-TEL:100000005
-EMAIL:contacto5@example.com
-ADR:Calle Falsa 5, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 6
-TEL:100000006
-EMAIL:contacto6@example.com
-ADR:Calle Falsa 6, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 7
-TEL:100000007
-EMAIL:contacto7@example.com
-ADR:Calle Falsa 7, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 8
-TEL:100000008
-EMAIL:contacto8@example.com
-ADR:Calle Falsa 8, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 9
-TEL:100000009
-EMAIL:contacto9@example.com
-ADR:Calle Falsa 9, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 10
-TEL:100000010
-EMAIL:contacto10@example.com
-ADR:Calle Falsa 10, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 11
-TEL:100000011
-EMAIL:contacto11@example.com
-ADR:Calle Falsa 11, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 12
-TEL:100000012
-EMAIL:contacto12@example.com
-ADR:Calle Falsa 12, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 13
-TEL:100000013
-EMAIL:contacto13@example.com
-ADR:Calle Falsa 13, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 14
-TEL:100000014
-EMAIL:contacto14@example.com
-ADR:Calle Falsa 14, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 15
-TEL:100000015
-EMAIL:contacto15@example.com
-ADR:Calle Falsa 15, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 16
-TEL:100000016
-EMAIL:contacto16@example.com
-ADR:Calle Falsa 16, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 17
-TEL:100000017
-EMAIL:contacto17@example.com
-ADR:Calle Falsa 17, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 18
-TEL:100000018
-EMAIL:contacto18@example.com
-ADR:Calle Falsa 18, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 19
-TEL:100000019
-EMAIL:contacto19@example.com
-ADR:Calle Falsa 19, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 20
-TEL:100000020
-EMAIL:contacto20@example.com
-ADR:Calle Falsa 20, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 21
-TEL:100000021
-EMAIL:contacto21@example.com
-ADR:Calle Falsa 21, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 22
-TEL:100000022
-EMAIL:contacto22@example.com
-ADR:Calle Falsa 22, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 23
-TEL:100000023
-EMAIL:contacto23@example.com
-ADR:Calle Falsa 23, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 24
-TEL:100000024
-EMAIL:contacto24@example.com
-ADR:Calle Falsa 24, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 25
-TEL:100000025
-EMAIL:contacto25@example.com
-ADR:Calle Falsa 25, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 26
-TEL:100000026
-EMAIL:contacto26@example.com
-ADR:Calle Falsa 26, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 27
-TEL:100000027
-EMAIL:contacto27@example.com
-ADR:Calle Falsa 27, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 28
-TEL:100000028
-EMAIL:contacto28@example.com
-ADR:Calle Falsa 28, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 29
-TEL:100000029
-EMAIL:contacto29@example.com
-ADR:Calle Falsa 29, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 30
-TEL:100000030
-EMAIL:contacto30@example.com
-ADR:Calle Falsa 30, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 31
-TEL:100000031
-EMAIL:contacto31@example.com
-ADR:Calle Falsa 31, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 32
-TEL:100000032
-EMAIL:contacto32@example.com
-ADR:Calle Falsa 32, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 33
-TEL:100000033
-EMAIL:contacto33@example.com
-ADR:Calle Falsa 33, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 34
-TEL:100000034
-EMAIL:contacto34@example.com
-ADR:Calle Falsa 34, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 35
-TEL:100000035
-EMAIL:contacto35@example.com
-ADR:Calle Falsa 35, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 36
-TEL:100000036
-EMAIL:contacto36@example.com
-ADR:Calle Falsa 36, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 37
-TEL:100000037
-EMAIL:contacto37@example.com
-ADR:Calle Falsa 37, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 38
-TEL:100000038
-EMAIL:contacto38@example.com
-ADR:Calle Falsa 38, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 39
-TEL:100000039
-EMAIL:contacto39@example.com
-ADR:Calle Falsa 39, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 40
-TEL:100000040
-EMAIL:contacto40@example.com
-ADR:Calle Falsa 40, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 41
-TEL:100000041
-EMAIL:contacto41@example.com
-ADR:Calle Falsa 41, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 42
-TEL:100000042
-EMAIL:contacto42@example.com
-ADR:Calle Falsa 42, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 43
-TEL:100000043
-EMAIL:contacto43@example.com
-ADR:Calle Falsa 43, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 44
-TEL:100000044
-EMAIL:contacto44@example.com
-ADR:Calle Falsa 44, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 45
-TEL:100000045
-EMAIL:contacto45@example.com
-ADR:Calle Falsa 45, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 46
-TEL:100000046
-EMAIL:contacto46@example.com
-ADR:Calle Falsa 46, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 47
-TEL:100000047
-EMAIL:contacto47@example.com
-ADR:Calle Falsa 47, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 48
-TEL:100000048
-EMAIL:contacto48@example.com
-ADR:Calle Falsa 48, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 49
-TEL:100000049
-EMAIL:contacto49@example.com
-ADR:Calle Falsa 49, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 50
-TEL:100000050
-EMAIL:contacto50@example.com
-ADR:Calle Falsa 50, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 51
-TEL:100000051
-EMAIL:contacto51@example.com
-ADR:Calle Falsa 51, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 52
-TEL:100000052
-EMAIL:contacto52@example.com
-ADR:Calle Falsa 52, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 53
-TEL:100000053
-EMAIL:contacto53@example.com
-ADR:Calle Falsa 53, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 54
-TEL:100000054
-EMAIL:contacto54@example.com
-ADR:Calle Falsa 54, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 55
-TEL:100000055
-EMAIL:contacto55@example.com
-ADR:Calle Falsa 55, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 56
-TEL:100000056
-EMAIL:contacto56@example.com
-ADR:Calle Falsa 56, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 57
-TEL:100000057
-EMAIL:contacto57@example.com
-ADR:Calle Falsa 57, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 58
-TEL:100000058
-EMAIL:contacto58@example.com
-ADR:Calle Falsa 58, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 59
-TEL:100000059
-EMAIL:contacto59@example.com
-ADR:Calle Falsa 59, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 60
-TEL:100000060
-EMAIL:contacto60@example.com
-ADR:Calle Falsa 60, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 61
-TEL:100000061
-EMAIL:contacto61@example.com
-ADR:Calle Falsa 61, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 62
-TEL:100000062
-EMAIL:contacto62@example.com
-ADR:Calle Falsa 62, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 63
-TEL:100000063
-EMAIL:contacto63@example.com
-ADR:Calle Falsa 63, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 64
-TEL:100000064
-EMAIL:contacto64@example.com
-ADR:Calle Falsa 64, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 65
-TEL:100000065
-EMAIL:contacto65@example.com
-ADR:Calle Falsa 65, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 66
-TEL:100000066
-EMAIL:contacto66@example.com
-ADR:Calle Falsa 66, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 67
-TEL:100000067
-EMAIL:contacto67@example.com
-ADR:Calle Falsa 67, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 68
-TEL:100000068
-EMAIL:contacto68@example.com
-ADR:Calle Falsa 68, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 69
-TEL:100000069
-EMAIL:contacto69@example.com
-ADR:Calle Falsa 69, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 70
-TEL:100000070
-EMAIL:contacto70@example.com
-ADR:Calle Falsa 70, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 71
-TEL:100000071
-EMAIL:contacto71@example.com
-ADR:Calle Falsa 71, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 72
-TEL:100000072
-EMAIL:contacto72@example.com
-ADR:Calle Falsa 72, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 73
-TEL:100000073
-EMAIL:contacto73@example.com
-ADR:Calle Falsa 73, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 74
-TEL:100000074
-EMAIL:contacto74@example.com
-ADR:Calle Falsa 74, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 75
-TEL:100000075
-EMAIL:contacto75@example.com
-ADR:Calle Falsa 75, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 76
-TEL:100000076
-EMAIL:contacto76@example.com
-ADR:Calle Falsa 76, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 77
-TEL:100000077
-EMAIL:contacto77@example.com
-ADR:Calle Falsa 77, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 78
-TEL:100000078
-EMAIL:contacto78@example.com
-ADR:Calle Falsa 78, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 79
-TEL:100000079
-EMAIL:contacto79@example.com
-ADR:Calle Falsa 79, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 80
-TEL:100000080
-EMAIL:contacto80@example.com
-ADR:Calle Falsa 80, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 81
-TEL:100000081
-EMAIL:contacto81@example.com
-ADR:Calle Falsa 81, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 82
-TEL:100000082
-EMAIL:contacto82@example.com
-ADR:Calle Falsa 82, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 83
-TEL:100000083
-EMAIL:contacto83@example.com
-ADR:Calle Falsa 83, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 84
-TEL:100000084
-EMAIL:contacto84@example.com
-ADR:Calle Falsa 84, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 85
-TEL:100000085
-EMAIL:contacto85@example.com
-ADR:Calle Falsa 85, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 86
-TEL:100000086
-EMAIL:contacto86@example.com
-ADR:Calle Falsa 86, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 87
-TEL:100000087
-EMAIL:contacto87@example.com
-ADR:Calle Falsa 87, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 88
-TEL:100000088
-EMAIL:contacto88@example.com
-ADR:Calle Falsa 88, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 89
-TEL:100000089
-EMAIL:contacto89@example.com
-ADR:Calle Falsa 89, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 90
-TEL:100000090
-EMAIL:contacto90@example.com
-ADR:Calle Falsa 90, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 91
-TEL:100000091
-EMAIL:contacto91@example.com
-ADR:Calle Falsa 91, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 92
-TEL:100000092
-EMAIL:contacto92@example.com
-ADR:Calle Falsa 92, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 93
-TEL:100000093
-EMAIL:contacto93@example.com
-ADR:Calle Falsa 93, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 94
-TEL:100000094
-EMAIL:contacto94@example.com
-ADR:Calle Falsa 94, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 95
-TEL:100000095
-EMAIL:contacto95@example.com
-ADR:Calle Falsa 95, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 96
-TEL:100000096
-EMAIL:contacto96@example.com
-ADR:Calle Falsa 96, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 97
-TEL:100000097
-EMAIL:contacto97@example.com
-ADR:Calle Falsa 97, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 98
-TEL:100000098
-EMAIL:contacto98@example.com
-ADR:Calle Falsa 98, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 99
-TEL:100000099
-EMAIL:contacto99@example.com
-ADR:Calle Falsa 99, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 100
-TEL:100000100
-EMAIL:contacto100@example.com
-ADR:Calle Falsa 100, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 101
-TEL:100000101
-EMAIL:contacto101@example.com
-ADR:Calle Falsa 101, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 102
-TEL:100000102
-EMAIL:contacto102@example.com
-ADR:Calle Falsa 102, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 103
-TEL:100000103
-EMAIL:contacto103@example.com
-ADR:Calle Falsa 103, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 104
-TEL:100000104
-EMAIL:contacto104@example.com
-ADR:Calle Falsa 104, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 105
-TEL:100000105
-EMAIL:contacto105@example.com
-ADR:Calle Falsa 105, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 106
-TEL:100000106
-EMAIL:contacto106@example.com
-ADR:Calle Falsa 106, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 107
-TEL:100000107
-EMAIL:contacto107@example.com
-ADR:Calle Falsa 107, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 108
-TEL:100000108
-EMAIL:contacto108@example.com
-ADR:Calle Falsa 108, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 109
-TEL:100000109
-EMAIL:contacto109@example.com
-ADR:Calle Falsa 109, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 110
-TEL:100000110
-EMAIL:contacto110@example.com
-ADR:Calle Falsa 110, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 111
-TEL:100000111
-EMAIL:contacto111@example.com
-ADR:Calle Falsa 111, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 112
-TEL:100000112
-EMAIL:contacto112@example.com
-ADR:Calle Falsa 112, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 113
-TEL:100000113
-EMAIL:contacto113@example.com
-ADR:Calle Falsa 113, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 114
-TEL:100000114
-EMAIL:contacto114@example.com
-ADR:Calle Falsa 114, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 115
-TEL:100000115
-EMAIL:contacto115@example.com
-ADR:Calle Falsa 115, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 116
-TEL:100000116
-EMAIL:contacto116@example.com
-ADR:Calle Falsa 116, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 117
-TEL:100000117
-EMAIL:contacto117@example.com
-ADR:Calle Falsa 117, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 118
-TEL:100000118
-EMAIL:contacto118@example.com
-ADR:Calle Falsa 118, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 119
-TEL:100000119
-EMAIL:contacto119@example.com
-ADR:Calle Falsa 119, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 120
-TEL:100000120
-EMAIL:contacto120@example.com
-ADR:Calle Falsa 120, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 121
-TEL:100000121
-EMAIL:contacto121@example.com
-ADR:Calle Falsa 121, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 122
-TEL:100000122
-EMAIL:contacto122@example.com
-ADR:Calle Falsa 122, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 123
-TEL:100000123
-EMAIL:contacto123@example.com
-ADR:Calle Falsa 123, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 124
-TEL:100000124
-EMAIL:contacto124@example.com
-ADR:Calle Falsa 124, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 125
-TEL:100000125
-EMAIL:contacto125@example.com
-ADR:Calle Falsa 125, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 126
-TEL:100000126
-EMAIL:contacto126@example.com
-ADR:Calle Falsa 126, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 127
-TEL:100000127
-EMAIL:contacto127@example.com
-ADR:Calle Falsa 127, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 128
-TEL:100000128
-EMAIL:contacto128@example.com
-ADR:Calle Falsa 128, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 129
-TEL:100000129
-EMAIL:contacto129@example.com
-ADR:Calle Falsa 129, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 130
-TEL:100000130
-EMAIL:contacto130@example.com
-ADR:Calle Falsa 130, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 131
-TEL:100000131
-EMAIL:contacto131@example.com
-ADR:Calle Falsa 131, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 132
-TEL:100000132
-EMAIL:contacto132@example.com
-ADR:Calle Falsa 132, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 133
-TEL:100000133
-EMAIL:contacto133@example.com
-ADR:Calle Falsa 133, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 134
-TEL:100000134
-EMAIL:contacto134@example.com
-ADR:Calle Falsa 134, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 135
-TEL:100000135
-EMAIL:contacto135@example.com
-ADR:Calle Falsa 135, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 136
-TEL:100000136
-EMAIL:contacto136@example.com
-ADR:Calle Falsa 136, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 137
-TEL:100000137
-EMAIL:contacto137@example.com
-ADR:Calle Falsa 137, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 138
-TEL:100000138
-EMAIL:contacto138@example.com
-ADR:Calle Falsa 138, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 139
-TEL:100000139
-EMAIL:contacto139@example.com
-ADR:Calle Falsa 139, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 140
-TEL:100000140
-EMAIL:contacto140@example.com
-ADR:Calle Falsa 140, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 141
-TEL:100000141
-EMAIL:contacto141@example.com
-ADR:Calle Falsa 141, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 142
-TEL:100000142
-EMAIL:contacto142@example.com
-ADR:Calle Falsa 142, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 143
-TEL:100000143
-EMAIL:contacto143@example.com
-ADR:Calle Falsa 143, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 144
-TEL:100000144
-EMAIL:contacto144@example.com
-ADR:Calle Falsa 144, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 145
-TEL:100000145
-EMAIL:contacto145@example.com
-ADR:Calle Falsa 145, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 146
-TEL:100000146
-EMAIL:contacto146@example.com
-ADR:Calle Falsa 146, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 147
-TEL:100000147
-EMAIL:contacto147@example.com
-ADR:Calle Falsa 147, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 148
-TEL:100000148
-EMAIL:contacto148@example.com
-ADR:Calle Falsa 148, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 149
-TEL:100000149
-EMAIL:contacto149@example.com
-ADR:Calle Falsa 149, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 150
-TEL:100000150
-EMAIL:contacto150@example.com
-ADR:Calle Falsa 150, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 151
-TEL:100000151
-EMAIL:contacto151@example.com
-ADR:Calle Falsa 151, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 152
-TEL:100000152
-EMAIL:contacto152@example.com
-ADR:Calle Falsa 152, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 153
-TEL:100000153
-EMAIL:contacto153@example.com
-ADR:Calle Falsa 153, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 154
-TEL:100000154
-EMAIL:contacto154@example.com
-ADR:Calle Falsa 154, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 155
-TEL:100000155
-EMAIL:contacto155@example.com
-ADR:Calle Falsa 155, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 156
-TEL:100000156
-EMAIL:contacto156@example.com
-ADR:Calle Falsa 156, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 157
-TEL:100000157
-EMAIL:contacto157@example.com
-ADR:Calle Falsa 157, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 158
-TEL:100000158
-EMAIL:contacto158@example.com
-ADR:Calle Falsa 158, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 159
-TEL:100000159
-EMAIL:contacto159@example.com
-ADR:Calle Falsa 159, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 160
-TEL:100000160
-EMAIL:contacto160@example.com
-ADR:Calle Falsa 160, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 161
-TEL:100000161
-EMAIL:contacto161@example.com
-ADR:Calle Falsa 161, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 162
-TEL:100000162
-EMAIL:contacto162@example.com
-ADR:Calle Falsa 162, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 163
-TEL:100000163
-EMAIL:contacto163@example.com
-ADR:Calle Falsa 163, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 164
-TEL:100000164
-EMAIL:contacto164@example.com
-ADR:Calle Falsa 164, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 165
-TEL:100000165
-EMAIL:contacto165@example.com
-ADR:Calle Falsa 165, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 166
-TEL:100000166
-EMAIL:contacto166@example.com
-ADR:Calle Falsa 166, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 167
-TEL:100000167
-EMAIL:contacto167@example.com
-ADR:Calle Falsa 167, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 168
-TEL:100000168
-EMAIL:contacto168@example.com
-ADR:Calle Falsa 168, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 169
-TEL:100000169
-EMAIL:contacto169@example.com
-ADR:Calle Falsa 169, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 170
-TEL:100000170
-EMAIL:contacto170@example.com
-ADR:Calle Falsa 170, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 171
-TEL:100000171
-EMAIL:contacto171@example.com
-ADR:Calle Falsa 171, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 172
-TEL:100000172
-EMAIL:contacto172@example.com
-ADR:Calle Falsa 172, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 173
-TEL:100000173
-EMAIL:contacto173@example.com
-ADR:Calle Falsa 173, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 174
-TEL:100000174
-EMAIL:contacto174@example.com
-ADR:Calle Falsa 174, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 175
-TEL:100000175
-EMAIL:contacto175@example.com
-ADR:Calle Falsa 175, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 176
-TEL:100000176
-EMAIL:contacto176@example.com
-ADR:Calle Falsa 176, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 177
-TEL:100000177
-EMAIL:contacto177@example.com
-ADR:Calle Falsa 177, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 178
-TEL:100000178
-EMAIL:contacto178@example.com
-ADR:Calle Falsa 178, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 179
-TEL:100000179
-EMAIL:contacto179@example.com
-ADR:Calle Falsa 179, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 180
-TEL:100000180
-EMAIL:contacto180@example.com
-ADR:Calle Falsa 180, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 181
-TEL:100000181
-EMAIL:contacto181@example.com
-ADR:Calle Falsa 181, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 182
-TEL:100000182
-EMAIL:contacto182@example.com
-ADR:Calle Falsa 182, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 183
-TEL:100000183
-EMAIL:contacto183@example.com
-ADR:Calle Falsa 183, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 184
-TEL:100000184
-EMAIL:contacto184@example.com
-ADR:Calle Falsa 184, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 185
-TEL:100000185
-EMAIL:contacto185@example.com
-ADR:Calle Falsa 185, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 186
-TEL:100000186
-EMAIL:contacto186@example.com
-ADR:Calle Falsa 186, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 187
-TEL:100000187
-EMAIL:contacto187@example.com
-ADR:Calle Falsa 187, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 188
-TEL:100000188
-EMAIL:contacto188@example.com
-ADR:Calle Falsa 188, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 189
-TEL:100000189
-EMAIL:contacto189@example.com
-ADR:Calle Falsa 189, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 190
-TEL:100000190
-EMAIL:contacto190@example.com
-ADR:Calle Falsa 190, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 191
-TEL:100000191
-EMAIL:contacto191@example.com
-ADR:Calle Falsa 191, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 192
-TEL:100000192
-EMAIL:contacto192@example.com
-ADR:Calle Falsa 192, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 193
-TEL:100000193
-EMAIL:contacto193@example.com
-ADR:Calle Falsa 193, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 194
-TEL:100000194
-EMAIL:contacto194@example.com
-ADR:Calle Falsa 194, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 195
-TEL:100000195
-EMAIL:contacto195@example.com
-ADR:Calle Falsa 195, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 196
-TEL:100000196
-EMAIL:contacto196@example.com
-ADR:Calle Falsa 196, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 197
-TEL:100000197
-EMAIL:contacto197@example.com
-ADR:Calle Falsa 197, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 198
-TEL:100000198
-EMAIL:contacto198@example.com
-ADR:Calle Falsa 198, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 199
-TEL:100000199
-EMAIL:contacto199@example.com
-ADR:Calle Falsa 199, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 200
-TEL:100000200
-EMAIL:contacto200@example.com
-ADR:Calle Falsa 200, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 201
-TEL:100000201
-EMAIL:contacto201@example.com
-ADR:Calle Falsa 201, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 202
-TEL:100000202
-EMAIL:contacto202@example.com
-ADR:Calle Falsa 202, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 203
-TEL:100000203
-EMAIL:contacto203@example.com
-ADR:Calle Falsa 203, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 204
-TEL:100000204
-EMAIL:contacto204@example.com
-ADR:Calle Falsa 204, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 205
-TEL:100000205
-EMAIL:contacto205@example.com
-ADR:Calle Falsa 205, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 206
-TEL:100000206
-EMAIL:contacto206@example.com
-ADR:Calle Falsa 206, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 207
-TEL:100000207
-EMAIL:contacto207@example.com
-ADR:Calle Falsa 207, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 208
-TEL:100000208
-EMAIL:contacto208@example.com
-ADR:Calle Falsa 208, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 209
-TEL:100000209
-EMAIL:contacto209@example.com
-ADR:Calle Falsa 209, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 210
-TEL:100000210
-EMAIL:contacto210@example.com
-ADR:Calle Falsa 210, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 211
-TEL:100000211
-EMAIL:contacto211@example.com
-ADR:Calle Falsa 211, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 212
-TEL:100000212
-EMAIL:contacto212@example.com
-ADR:Calle Falsa 212, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 213
-TEL:100000213
-EMAIL:contacto213@example.com
-ADR:Calle Falsa 213, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 214
-TEL:100000214
-EMAIL:contacto214@example.com
-ADR:Calle Falsa 214, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 215
-TEL:100000215
-EMAIL:contacto215@example.com
-ADR:Calle Falsa 215, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 216
-TEL:100000216
-EMAIL:contacto216@example.com
-ADR:Calle Falsa 216, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 217
-TEL:100000217
-EMAIL:contacto217@example.com
-ADR:Calle Falsa 217, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 218
-TEL:100000218
-EMAIL:contacto218@example.com
-ADR:Calle Falsa 218, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 219
-TEL:100000219
-EMAIL:contacto219@example.com
-ADR:Calle Falsa 219, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 220
-TEL:100000220
-EMAIL:contacto220@example.com
-ADR:Calle Falsa 220, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 221
-TEL:100000221
-EMAIL:contacto221@example.com
-ADR:Calle Falsa 221, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 222
-TEL:100000222
-EMAIL:contacto222@example.com
-ADR:Calle Falsa 222, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 223
-TEL:100000223
-EMAIL:contacto223@example.com
-ADR:Calle Falsa 223, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 224
-TEL:100000224
-EMAIL:contacto224@example.com
-ADR:Calle Falsa 224, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 225
-TEL:100000225
-EMAIL:contacto225@example.com
-ADR:Calle Falsa 225, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 226
-TEL:100000226
-EMAIL:contacto226@example.com
-ADR:Calle Falsa 226, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 227
-TEL:100000227
-EMAIL:contacto227@example.com
-ADR:Calle Falsa 227, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 228
-TEL:100000228
-EMAIL:contacto228@example.com
-ADR:Calle Falsa 228, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 229
-TEL:100000229
-EMAIL:contacto229@example.com
-ADR:Calle Falsa 229, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 230
-TEL:100000230
-EMAIL:contacto230@example.com
-ADR:Calle Falsa 230, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 231
-TEL:100000231
-EMAIL:contacto231@example.com
-ADR:Calle Falsa 231, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 232
-TEL:100000232
-EMAIL:contacto232@example.com
-ADR:Calle Falsa 232, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 233
-TEL:100000233
-EMAIL:contacto233@example.com
-ADR:Calle Falsa 233, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 234
-TEL:100000234
-EMAIL:contacto234@example.com
-ADR:Calle Falsa 234, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 235
-TEL:100000235
-EMAIL:contacto235@example.com
-ADR:Calle Falsa 235, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 236
-TEL:100000236
-EMAIL:contacto236@example.com
-ADR:Calle Falsa 236, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 237
-TEL:100000237
-EMAIL:contacto237@example.com
-ADR:Calle Falsa 237, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 238
-TEL:100000238
-EMAIL:contacto238@example.com
-ADR:Calle Falsa 238, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 239
-TEL:100000239
-EMAIL:contacto239@example.com
-ADR:Calle Falsa 239, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 240
-TEL:100000240
-EMAIL:contacto240@example.com
-ADR:Calle Falsa 240, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 241
-TEL:100000241
-EMAIL:contacto241@example.com
-ADR:Calle Falsa 241, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 242
-TEL:100000242
-EMAIL:contacto242@example.com
-ADR:Calle Falsa 242, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 243
-TEL:100000243
-EMAIL:contacto243@example.com
-ADR:Calle Falsa 243, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 244
-TEL:100000244
-EMAIL:contacto244@example.com
-ADR:Calle Falsa 244, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 245
-TEL:100000245
-EMAIL:contacto245@example.com
-ADR:Calle Falsa 245, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 246
-TEL:100000246
-EMAIL:contacto246@example.com
-ADR:Calle Falsa 246, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 247
-TEL:100000247
-EMAIL:contacto247@example.com
-ADR:Calle Falsa 247, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 248
-TEL:100000248
-EMAIL:contacto248@example.com
-ADR:Calle Falsa 248, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 249
-TEL:100000249
-EMAIL:contacto249@example.com
-ADR:Calle Falsa 249, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 250
-TEL:100000250
-EMAIL:contacto250@example.com
-ADR:Calle Falsa 250, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 251
-TEL:100000251
-EMAIL:contacto251@example.com
-ADR:Calle Falsa 251, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 252
-TEL:100000252
-EMAIL:contacto252@example.com
-ADR:Calle Falsa 252, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 253
-TEL:100000253
-EMAIL:contacto253@example.com
-ADR:Calle Falsa 253, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 254
-TEL:100000254
-EMAIL:contacto254@example.com
-ADR:Calle Falsa 254, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 255
-TEL:100000255
-EMAIL:contacto255@example.com
-ADR:Calle Falsa 255, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 256
-TEL:100000256
-EMAIL:contacto256@example.com
-ADR:Calle Falsa 256, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 257
-TEL:100000257
-EMAIL:contacto257@example.com
-ADR:Calle Falsa 257, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 258
-TEL:100000258
-EMAIL:contacto258@example.com
-ADR:Calle Falsa 258, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 259
-TEL:100000259
-EMAIL:contacto259@example.com
-ADR:Calle Falsa 259, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 260
-TEL:100000260
-EMAIL:contacto260@example.com
-ADR:Calle Falsa 260, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 261
-TEL:100000261
-EMAIL:contacto261@example.com
-ADR:Calle Falsa 261, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 262
-TEL:100000262
-EMAIL:contacto262@example.com
-ADR:Calle Falsa 262, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 263
-TEL:100000263
-EMAIL:contacto263@example.com
-ADR:Calle Falsa 263, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 264
-TEL:100000264
-EMAIL:contacto264@example.com
-ADR:Calle Falsa 264, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 265
-TEL:100000265
-EMAIL:contacto265@example.com
-ADR:Calle Falsa 265, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 266
-TEL:100000266
-EMAIL:contacto266@example.com
-ADR:Calle Falsa 266, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 267
-TEL:100000267
-EMAIL:contacto267@example.com
-ADR:Calle Falsa 267, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 268
-TEL:100000268
-EMAIL:contacto268@example.com
-ADR:Calle Falsa 268, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 269
-TEL:100000269
-EMAIL:contacto269@example.com
-ADR:Calle Falsa 269, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 270
-TEL:100000270
-EMAIL:contacto270@example.com
-ADR:Calle Falsa 270, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 271
-TEL:100000271
-EMAIL:contacto271@example.com
-ADR:Calle Falsa 271, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 272
-TEL:100000272
-EMAIL:contacto272@example.com
-ADR:Calle Falsa 272, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 273
-TEL:100000273
-EMAIL:contacto273@example.com
-ADR:Calle Falsa 273, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 274
-TEL:100000274
-EMAIL:contacto274@example.com
-ADR:Calle Falsa 274, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 275
-TEL:100000275
-EMAIL:contacto275@example.com
-ADR:Calle Falsa 275, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 276
-TEL:100000276
-EMAIL:contacto276@example.com
-ADR:Calle Falsa 276, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 277
-TEL:100000277
-EMAIL:contacto277@example.com
-ADR:Calle Falsa 277, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 278
-TEL:100000278
-EMAIL:contacto278@example.com
-ADR:Calle Falsa 278, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 279
-TEL:100000279
-EMAIL:contacto279@example.com
-ADR:Calle Falsa 279, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 280
-TEL:100000280
-EMAIL:contacto280@example.com
-ADR:Calle Falsa 280, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 281
-TEL:100000281
-EMAIL:contacto281@example.com
-ADR:Calle Falsa 281, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 282
-TEL:100000282
-EMAIL:contacto282@example.com
-ADR:Calle Falsa 282, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 283
-TEL:100000283
-EMAIL:contacto283@example.com
-ADR:Calle Falsa 283, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 284
-TEL:100000284
-EMAIL:contacto284@example.com
-ADR:Calle Falsa 284, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 285
-TEL:100000285
-EMAIL:contacto285@example.com
-ADR:Calle Falsa 285, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 286
-TEL:100000286
-EMAIL:contacto286@example.com
-ADR:Calle Falsa 286, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 287
-TEL:100000287
-EMAIL:contacto287@example.com
-ADR:Calle Falsa 287, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 288
-TEL:100000288
-EMAIL:contacto288@example.com
-ADR:Calle Falsa 288, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 289
-TEL:100000289
-EMAIL:contacto289@example.com
-ADR:Calle Falsa 289, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 290
-TEL:100000290
-EMAIL:contacto290@example.com
-ADR:Calle Falsa 290, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 291
-TEL:100000291
-EMAIL:contacto291@example.com
-ADR:Calle Falsa 291, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 292
-TEL:100000292
-EMAIL:contacto292@example.com
-ADR:Calle Falsa 292, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 293
-TEL:100000293
-EMAIL:contacto293@example.com
-ADR:Calle Falsa 293, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 294
-TEL:100000294
-EMAIL:contacto294@example.com
-ADR:Calle Falsa 294, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 295
-TEL:100000295
-EMAIL:contacto295@example.com
-ADR:Calle Falsa 295, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 296
-TEL:100000296
-EMAIL:contacto296@example.com
-ADR:Calle Falsa 296, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 297
-TEL:100000297
-EMAIL:contacto297@example.com
-ADR:Calle Falsa 297, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 298
-TEL:100000298
-EMAIL:contacto298@example.com
-ADR:Calle Falsa 298, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 299
-TEL:100000299
-EMAIL:contacto299@example.com
-ADR:Calle Falsa 299, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 300
-TEL:100000300
-EMAIL:contacto300@example.com
-ADR:Calle Falsa 300, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 301
-TEL:100000301
-EMAIL:contacto301@example.com
-ADR:Calle Falsa 301, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 302
-TEL:100000302
-EMAIL:contacto302@example.com
-ADR:Calle Falsa 302, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 303
-TEL:100000303
-EMAIL:contacto303@example.com
-ADR:Calle Falsa 303, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 304
-TEL:100000304
-EMAIL:contacto304@example.com
-ADR:Calle Falsa 304, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 305
-TEL:100000305
-EMAIL:contacto305@example.com
-ADR:Calle Falsa 305, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 306
-TEL:100000306
-EMAIL:contacto306@example.com
-ADR:Calle Falsa 306, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 307
-TEL:100000307
-EMAIL:contacto307@example.com
-ADR:Calle Falsa 307, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 308
-TEL:100000308
-EMAIL:contacto308@example.com
-ADR:Calle Falsa 308, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 309
-TEL:100000309
-EMAIL:contacto309@example.com
-ADR:Calle Falsa 309, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 310
-TEL:100000310
-EMAIL:contacto310@example.com
-ADR:Calle Falsa 310, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 311
-TEL:100000311
-EMAIL:contacto311@example.com
-ADR:Calle Falsa 311, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 312
-TEL:100000312
-EMAIL:contacto312@example.com
-ADR:Calle Falsa 312, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 313
-TEL:100000313
-EMAIL:contacto313@example.com
-ADR:Calle Falsa 313, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 314
-TEL:100000314
-EMAIL:contacto314@example.com
-ADR:Calle Falsa 314, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 315
-TEL:100000315
-EMAIL:contacto315@example.com
-ADR:Calle Falsa 315, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 316
-TEL:100000316
-EMAIL:contacto316@example.com
-ADR:Calle Falsa 316, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 317
-TEL:100000317
-EMAIL:contacto317@example.com
-ADR:Calle Falsa 317, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 318
-TEL:100000318
-EMAIL:contacto318@example.com
-ADR:Calle Falsa 318, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 319
-TEL:100000319
-EMAIL:contacto319@example.com
-ADR:Calle Falsa 319, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 320
-TEL:100000320
-EMAIL:contacto320@example.com
-ADR:Calle Falsa 320, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 321
-TEL:100000321
-EMAIL:contacto321@example.com
-ADR:Calle Falsa 321, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 322
-TEL:100000322
-EMAIL:contacto322@example.com
-ADR:Calle Falsa 322, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 323
-TEL:100000323
-EMAIL:contacto323@example.com
-ADR:Calle Falsa 323, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 324
-TEL:100000324
-EMAIL:contacto324@example.com
-ADR:Calle Falsa 324, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 325
-TEL:100000325
-EMAIL:contacto325@example.com
-ADR:Calle Falsa 325, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 326
-TEL:100000326
-EMAIL:contacto326@example.com
-ADR:Calle Falsa 326, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 327
-TEL:100000327
-EMAIL:contacto327@example.com
-ADR:Calle Falsa 327, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 328
-TEL:100000328
-EMAIL:contacto328@example.com
-ADR:Calle Falsa 328, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 329
-TEL:100000329
-EMAIL:contacto329@example.com
-ADR:Calle Falsa 329, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 330
-TEL:100000330
-EMAIL:contacto330@example.com
-ADR:Calle Falsa 330, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 331
-TEL:100000331
-EMAIL:contacto331@example.com
-ADR:Calle Falsa 331, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 332
-TEL:100000332
-EMAIL:contacto332@example.com
-ADR:Calle Falsa 332, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 333
-TEL:100000333
-EMAIL:contacto333@example.com
-ADR:Calle Falsa 333, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 334
-TEL:100000334
-EMAIL:contacto334@example.com
-ADR:Calle Falsa 334, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 335
-TEL:100000335
-EMAIL:contacto335@example.com
-ADR:Calle Falsa 335, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 336
-TEL:100000336
-EMAIL:contacto336@example.com
-ADR:Calle Falsa 336, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 337
-TEL:100000337
-EMAIL:contacto337@example.com
-ADR:Calle Falsa 337, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 338
-TEL:100000338
-EMAIL:contacto338@example.com
-ADR:Calle Falsa 338, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 339
-TEL:100000339
-EMAIL:contacto339@example.com
-ADR:Calle Falsa 339, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 340
-TEL:100000340
-EMAIL:contacto340@example.com
-ADR:Calle Falsa 340, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 341
-TEL:100000341
-EMAIL:contacto341@example.com
-ADR:Calle Falsa 341, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 342
-TEL:100000342
-EMAIL:contacto342@example.com
-ADR:Calle Falsa 342, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 343
-TEL:100000343
-EMAIL:contacto343@example.com
-ADR:Calle Falsa 343, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 344
-TEL:100000344
-EMAIL:contacto344@example.com
-ADR:Calle Falsa 344, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 345
-TEL:100000345
-EMAIL:contacto345@example.com
-ADR:Calle Falsa 345, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 346
-TEL:100000346
-EMAIL:contacto346@example.com
-ADR:Calle Falsa 346, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 347
-TEL:100000347
-EMAIL:contacto347@example.com
-ADR:Calle Falsa 347, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 348
-TEL:100000348
-EMAIL:contacto348@example.com
-ADR:Calle Falsa 348, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 349
-TEL:100000349
-EMAIL:contacto349@example.com
-ADR:Calle Falsa 349, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 350
-TEL:100000350
-EMAIL:contacto350@example.com
-ADR:Calle Falsa 350, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 351
-TEL:100000351
-EMAIL:contacto351@example.com
-ADR:Calle Falsa 351, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 352
-TEL:100000352
-EMAIL:contacto352@example.com
-ADR:Calle Falsa 352, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 353
-TEL:100000353
-EMAIL:contacto353@example.com
-ADR:Calle Falsa 353, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 354
-TEL:100000354
-EMAIL:contacto354@example.com
-ADR:Calle Falsa 354, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 355
-TEL:100000355
-EMAIL:contacto355@example.com
-ADR:Calle Falsa 355, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 356
-TEL:100000356
-EMAIL:contacto356@example.com
-ADR:Calle Falsa 356, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 357
-TEL:100000357
-EMAIL:contacto357@example.com
-ADR:Calle Falsa 357, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 358
-TEL:100000358
-EMAIL:contacto358@example.com
-ADR:Calle Falsa 358, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 359
-TEL:100000359
-EMAIL:contacto359@example.com
-ADR:Calle Falsa 359, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 360
-TEL:100000360
-EMAIL:contacto360@example.com
-ADR:Calle Falsa 360, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 361
-TEL:100000361
-EMAIL:contacto361@example.com
-ADR:Calle Falsa 361, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 362
-TEL:100000362
-EMAIL:contacto362@example.com
-ADR:Calle Falsa 362, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 363
-TEL:100000363
-EMAIL:contacto363@example.com
-ADR:Calle Falsa 363, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 364
-TEL:100000364
-EMAIL:contacto364@example.com
-ADR:Calle Falsa 364, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 365
-TEL:100000365
-EMAIL:contacto365@example.com
-ADR:Calle Falsa 365, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 366
-TEL:100000366
-EMAIL:contacto366@example.com
-ADR:Calle Falsa 366, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 367
-TEL:100000367
-EMAIL:contacto367@example.com
-ADR:Calle Falsa 367, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 368
-TEL:100000368
-EMAIL:contacto368@example.com
-ADR:Calle Falsa 368, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 369
-TEL:100000369
-EMAIL:contacto369@example.com
-ADR:Calle Falsa 369, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 370
-TEL:100000370
-EMAIL:contacto370@example.com
-ADR:Calle Falsa 370, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 371
-TEL:100000371
-EMAIL:contacto371@example.com
-ADR:Calle Falsa 371, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 372
-TEL:100000372
-EMAIL:contacto372@example.com
-ADR:Calle Falsa 372, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 373
-TEL:100000373
-EMAIL:contacto373@example.com
-ADR:Calle Falsa 373, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 374
-TEL:100000374
-EMAIL:contacto374@example.com
-ADR:Calle Falsa 374, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 375
-TEL:100000375
-EMAIL:contacto375@example.com
-ADR:Calle Falsa 375, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 376
-TEL:100000376
-EMAIL:contacto376@example.com
-ADR:Calle Falsa 376, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 377
-TEL:100000377
-EMAIL:contacto377@example.com
-ADR:Calle Falsa 377, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 378
-TEL:100000378
-EMAIL:contacto378@example.com
-ADR:Calle Falsa 378, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 379
-TEL:100000379
-EMAIL:contacto379@example.com
-ADR:Calle Falsa 379, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 380
-TEL:100000380
-EMAIL:contacto380@example.com
-ADR:Calle Falsa 380, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 381
-TEL:100000381
-EMAIL:contacto381@example.com
-ADR:Calle Falsa 381, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 382
-TEL:100000382
-EMAIL:contacto382@example.com
-ADR:Calle Falsa 382, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 383
-TEL:100000383
-EMAIL:contacto383@example.com
-ADR:Calle Falsa 383, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 384
-TEL:100000384
-EMAIL:contacto384@example.com
-ADR:Calle Falsa 384, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 385
-TEL:100000385
-EMAIL:contacto385@example.com
-ADR:Calle Falsa 385, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 386
-TEL:100000386
-EMAIL:contacto386@example.com
-ADR:Calle Falsa 386, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 387
-TEL:100000387
-EMAIL:contacto387@example.com
-ADR:Calle Falsa 387, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 388
-TEL:100000388
-EMAIL:contacto388@example.com
-ADR:Calle Falsa 388, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 389
-TEL:100000389
-EMAIL:contacto389@example.com
-ADR:Calle Falsa 389, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 390
-TEL:100000390
-EMAIL:contacto390@example.com
-ADR:Calle Falsa 390, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 391
-TEL:100000391
-EMAIL:contacto391@example.com
-ADR:Calle Falsa 391, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 392
-TEL:100000392
-EMAIL:contacto392@example.com
-ADR:Calle Falsa 392, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 393
-TEL:100000393
-EMAIL:contacto393@example.com
-ADR:Calle Falsa 393, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 394
-TEL:100000394
-EMAIL:contacto394@example.com
-ADR:Calle Falsa 394, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 395
-TEL:100000395
-EMAIL:contacto395@example.com
-ADR:Calle Falsa 395, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 396
-TEL:100000396
-EMAIL:contacto396@example.com
-ADR:Calle Falsa 396, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 397
-TEL:100000397
-EMAIL:contacto397@example.com
-ADR:Calle Falsa 397, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 398
-TEL:100000398
-EMAIL:contacto398@example.com
-ADR:Calle Falsa 398, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 399
-TEL:100000399
-EMAIL:contacto399@example.com
-ADR:Calle Falsa 399, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 400
-TEL:100000400
-EMAIL:contacto400@example.com
-ADR:Calle Falsa 400, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 401
-TEL:100000401
-EMAIL:contacto401@example.com
-ADR:Calle Falsa 401, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 402
-TEL:100000402
-EMAIL:contacto402@example.com
-ADR:Calle Falsa 402, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 403
-TEL:100000403
-EMAIL:contacto403@example.com
-ADR:Calle Falsa 403, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 404
-TEL:100000404
-EMAIL:contacto404@example.com
-ADR:Calle Falsa 404, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 405
-TEL:100000405
-EMAIL:contacto405@example.com
-ADR:Calle Falsa 405, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 406
-TEL:100000406
-EMAIL:contacto406@example.com
-ADR:Calle Falsa 406, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 407
-TEL:100000407
-EMAIL:contacto407@example.com
-ADR:Calle Falsa 407, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 408
-TEL:100000408
-EMAIL:contacto408@example.com
-ADR:Calle Falsa 408, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 409
-TEL:100000409
-EMAIL:contacto409@example.com
-ADR:Calle Falsa 409, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 410
-TEL:100000410
-EMAIL:contacto410@example.com
-ADR:Calle Falsa 410, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 411
-TEL:100000411
-EMAIL:contacto411@example.com
-ADR:Calle Falsa 411, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 412
-TEL:100000412
-EMAIL:contacto412@example.com
-ADR:Calle Falsa 412, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 413
-TEL:100000413
-EMAIL:contacto413@example.com
-ADR:Calle Falsa 413, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 414
-TEL:100000414
-EMAIL:contacto414@example.com
-ADR:Calle Falsa 414, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 415
-TEL:100000415
-EMAIL:contacto415@example.com
-ADR:Calle Falsa 415, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 416
-TEL:100000416
-EMAIL:contacto416@example.com
-ADR:Calle Falsa 416, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 417
-TEL:100000417
-EMAIL:contacto417@example.com
-ADR:Calle Falsa 417, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 418
-TEL:100000418
-EMAIL:contacto418@example.com
-ADR:Calle Falsa 418, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 419
-TEL:100000419
-EMAIL:contacto419@example.com
-ADR:Calle Falsa 419, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 420
-TEL:100000420
-EMAIL:contacto420@example.com
-ADR:Calle Falsa 420, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 421
-TEL:100000421
-EMAIL:contacto421@example.com
-ADR:Calle Falsa 421, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 422
-TEL:100000422
-EMAIL:contacto422@example.com
-ADR:Calle Falsa 422, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 423
-TEL:100000423
-EMAIL:contacto423@example.com
-ADR:Calle Falsa 423, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 424
-TEL:100000424
-EMAIL:contacto424@example.com
-ADR:Calle Falsa 424, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 425
-TEL:100000425
-EMAIL:contacto425@example.com
-ADR:Calle Falsa 425, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 426
-TEL:100000426
-EMAIL:contacto426@example.com
-ADR:Calle Falsa 426, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 427
-TEL:100000427
-EMAIL:contacto427@example.com
-ADR:Calle Falsa 427, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 428
-TEL:100000428
-EMAIL:contacto428@example.com
-ADR:Calle Falsa 428, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 429
-TEL:100000429
-EMAIL:contacto429@example.com
-ADR:Calle Falsa 429, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 430
-TEL:100000430
-EMAIL:contacto430@example.com
-ADR:Calle Falsa 430, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 431
-TEL:100000431
-EMAIL:contacto431@example.com
-ADR:Calle Falsa 431, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 432
-TEL:100000432
-EMAIL:contacto432@example.com
-ADR:Calle Falsa 432, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 433
-TEL:100000433
-EMAIL:contacto433@example.com
-ADR:Calle Falsa 433, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 434
-TEL:100000434
-EMAIL:contacto434@example.com
-ADR:Calle Falsa 434, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 435
-TEL:100000435
-EMAIL:contacto435@example.com
-ADR:Calle Falsa 435, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 436
-TEL:100000436
-EMAIL:contacto436@example.com
-ADR:Calle Falsa 436, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 437
-TEL:100000437
-EMAIL:contacto437@example.com
-ADR:Calle Falsa 437, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 438
-TEL:100000438
-EMAIL:contacto438@example.com
-ADR:Calle Falsa 438, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 439
-TEL:100000439
-EMAIL:contacto439@example.com
-ADR:Calle Falsa 439, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 440
-TEL:100000440
-EMAIL:contacto440@example.com
-ADR:Calle Falsa 440, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 441
-TEL:100000441
-EMAIL:contacto441@example.com
-ADR:Calle Falsa 441, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 442
-TEL:100000442
-EMAIL:contacto442@example.com
-ADR:Calle Falsa 442, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 443
-TEL:100000443
-EMAIL:contacto443@example.com
-ADR:Calle Falsa 443, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 444
-TEL:100000444
-EMAIL:contacto444@example.com
-ADR:Calle Falsa 444, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 445
-TEL:100000445
-EMAIL:contacto445@example.com
-ADR:Calle Falsa 445, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 446
-TEL:100000446
-EMAIL:contacto446@example.com
-ADR:Calle Falsa 446, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 447
-TEL:100000447
-EMAIL:contacto447@example.com
-ADR:Calle Falsa 447, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 448
-TEL:100000448
-EMAIL:contacto448@example.com
-ADR:Calle Falsa 448, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 449
-TEL:100000449
-EMAIL:contacto449@example.com
-ADR:Calle Falsa 449, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 450
-TEL:100000450
-EMAIL:contacto450@example.com
-ADR:Calle Falsa 450, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 451
-TEL:100000451
-EMAIL:contacto451@example.com
-ADR:Calle Falsa 451, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 452
-TEL:100000452
-EMAIL:contacto452@example.com
-ADR:Calle Falsa 452, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 453
-TEL:100000453
-EMAIL:contacto453@example.com
-ADR:Calle Falsa 453, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 454
-TEL:100000454
-EMAIL:contacto454@example.com
-ADR:Calle Falsa 454, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 455
-TEL:100000455
-EMAIL:contacto455@example.com
-ADR:Calle Falsa 455, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 456
-TEL:100000456
-EMAIL:contacto456@example.com
-ADR:Calle Falsa 456, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 457
-TEL:100000457
-EMAIL:contacto457@example.com
-ADR:Calle Falsa 457, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 458
-TEL:100000458
-EMAIL:contacto458@example.com
-ADR:Calle Falsa 458, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 459
-TEL:100000459
-EMAIL:contacto459@example.com
-ADR:Calle Falsa 459, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 460
-TEL:100000460
-EMAIL:contacto460@example.com
-ADR:Calle Falsa 460, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 461
-TEL:100000461
-EMAIL:contacto461@example.com
-ADR:Calle Falsa 461, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 462
-TEL:100000462
-EMAIL:contacto462@example.com
-ADR:Calle Falsa 462, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 463
-TEL:100000463
-EMAIL:contacto463@example.com
-ADR:Calle Falsa 463, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 464
-TEL:100000464
-EMAIL:contacto464@example.com
-ADR:Calle Falsa 464, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 465
-TEL:100000465
-EMAIL:contacto465@example.com
-ADR:Calle Falsa 465, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 466
-TEL:100000466
-EMAIL:contacto466@example.com
-ADR:Calle Falsa 466, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 467
-TEL:100000467
-EMAIL:contacto467@example.com
-ADR:Calle Falsa 467, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 468
-TEL:100000468
-EMAIL:contacto468@example.com
-ADR:Calle Falsa 468, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 469
-TEL:100000469
-EMAIL:contacto469@example.com
-ADR:Calle Falsa 469, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 470
-TEL:100000470
-EMAIL:contacto470@example.com
-ADR:Calle Falsa 470, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 471
-TEL:100000471
-EMAIL:contacto471@example.com
-ADR:Calle Falsa 471, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 472
-TEL:100000472
-EMAIL:contacto472@example.com
-ADR:Calle Falsa 472, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 473
-TEL:100000473
-EMAIL:contacto473@example.com
-ADR:Calle Falsa 473, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 474
-TEL:100000474
-EMAIL:contacto474@example.com
-ADR:Calle Falsa 474, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 475
-TEL:100000475
-EMAIL:contacto475@example.com
-ADR:Calle Falsa 475, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 476
-TEL:100000476
-EMAIL:contacto476@example.com
-ADR:Calle Falsa 476, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 477
-TEL:100000477
-EMAIL:contacto477@example.com
-ADR:Calle Falsa 477, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 478
-TEL:100000478
-EMAIL:contacto478@example.com
-ADR:Calle Falsa 478, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 479
-TEL:100000479
-EMAIL:contacto479@example.com
-ADR:Calle Falsa 479, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 480
-TEL:100000480
-EMAIL:contacto480@example.com
-ADR:Calle Falsa 480, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 481
-TEL:100000481
-EMAIL:contacto481@example.com
-ADR:Calle Falsa 481, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 482
-TEL:100000482
-EMAIL:contacto482@example.com
-ADR:Calle Falsa 482, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 483
-TEL:100000483
-EMAIL:contacto483@example.com
-ADR:Calle Falsa 483, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 484
-TEL:100000484
-EMAIL:contacto484@example.com
-ADR:Calle Falsa 484, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 485
-TEL:100000485
-EMAIL:contacto485@example.com
-ADR:Calle Falsa 485, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 486
-TEL:100000486
-EMAIL:contacto486@example.com
-ADR:Calle Falsa 486, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 487
-TEL:100000487
-EMAIL:contacto487@example.com
-ADR:Calle Falsa 487, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 488
-TEL:100000488
-EMAIL:contacto488@example.com
-ADR:Calle Falsa 488, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 489
-TEL:100000489
-EMAIL:contacto489@example.com
-ADR:Calle Falsa 489, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 490
-TEL:100000490
-EMAIL:contacto490@example.com
-ADR:Calle Falsa 490, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 491
-TEL:100000491
-EMAIL:contacto491@example.com
-ADR:Calle Falsa 491, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 492
-TEL:100000492
-EMAIL:contacto492@example.com
-ADR:Calle Falsa 492, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 493
-TEL:100000493
-EMAIL:contacto493@example.com
-ADR:Calle Falsa 493, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 494
-TEL:100000494
-EMAIL:contacto494@example.com
-ADR:Calle Falsa 494, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 495
-TEL:100000495
-EMAIL:contacto495@example.com
-ADR:Calle Falsa 495, Ciudad, País
-CATEGORY:Personal
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 496
-TEL:100000496
-EMAIL:contacto496@example.com
-ADR:Calle Falsa 496, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 497
-TEL:100000497
-EMAIL:contacto497@example.com
-ADR:Calle Falsa 497, Ciudad, País
-CATEGORY:Amigos
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 498
-TEL:100000498
-EMAIL:contacto498@example.com
-ADR:Calle Falsa 498, Ciudad, País
-CATEGORY:Familia
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
 FN:Contacto 499
-TEL:100000499
-EMAIL:contacto499@example.com
-ADR:Calle Falsa 499, Ciudad, País
-CATEGORY:Personal
-END:VCARD
-BEGIN:VCARD
-VERSION:3.0
-FN:Contacto 500
-TEL:100000500
-EMAIL:contacto500@example.com
-ADR:Calle Falsa 500, Ciudad, País
-CATEGORY:Trabajo
 END:VCARD

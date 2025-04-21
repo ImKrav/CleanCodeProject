@@ -58,7 +58,7 @@ El objetivo de este proyecto es desarrollar una aplicación para la gestión de 
 | # | Descripción | Resultado |
 |---|------------|-----------|
 | 1 | Editar un contacto que no existe. | Error: El contacto no existe |
-| 2 | Editar un contacto dejando el nombre vacío. | Error: El nombre no puede estar vacío. |
+| 2 | Editar un contacto con un teléfono no númerico. | Error: El teléfono debe ser un valor númerico. |
 | 3 | Editar un contacto con un email inválido. | Error: El email no tiene un formato válido. |
 
 ---

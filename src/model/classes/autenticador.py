@@ -37,7 +37,7 @@ class Autenticador:
         self.usuarios.append(usuario)
         return usuario
 
-    def iniciar_sesion(self, email, password) -> bool:
+    def iniciar_sesion(self, email, password) -> Usuario:
         """
         Autentica un usuario existente.
 
@@ -69,5 +69,5 @@ class Autenticador:
                 if usuario.password != password:
                     raise ErrorContrasenaIncorrecta(f'La contraseña es incorrecta')
                 if usuario.password == password:
-                    return True
+                    return usuario
         raise UsuarioNoExistente(f'El usuario no existe')

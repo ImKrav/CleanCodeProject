@@ -2,7 +2,7 @@ import pytest
 from src.model.classes.contacto import Contacto
 from src.model.classes.usuario import Usuario
 from src.model.classes.gestor_de_contactos import GestorDeContactos
-from src.model.errors import IDNoEncontrado, ErrorTelefonoMuyLargo, ErrorCorreoInvalido, ErrorNombreVacio
+from src.model.errors import ErrorTelefonoNoNumerico, IDNoEncontrado, ErrorTelefonoMuyLargo, ErrorCorreoInvalido, ErrorNombreVacio
 
 
 # CASOS NORMALES
@@ -96,17 +96,17 @@ def test_editar_contacto_inexistente():
     with pytest.raises(IDNoEncontrado):
         gestor.editar_contacto(Contacto(999, "Juanchito", "123456", "juanchito@gmail.com", "Calle 123", "Personal"))
 
-def test_editar_contacto_nombre_vacio():
+def test_editar_contacto_telefono_no_numerico():
     """
     Caso de Error 2:
-    Editar un contacto dejando el nombre vacío.
-    Resultado: Error: El nombre no puede estar vacío.
+    Editar un contacto con un teléfono que contiene caracteres no numéricos.
+    Resultado: Error: El teléfono debe contener solo dígitos.
     """
     usuario = Usuario(1, "user", "user@email.com", "anotherpass")
     gestor = GestorDeContactos(usuario)
-    gestor.agregar_contacto(Contacto(7, "Pedro Pelaez", "123456", "pedropelaez@gmail.com", "Calle 321", "Personal"))
-    with pytest.raises(ErrorNombreVacio):
-        gestor.editar_contacto(Contacto(7, "", "123456", "pedropelaez@gmail.com", "Calle 321", "Personal"))
+    gestor.agregar_contacto(Contacto(9, "Pedro Pelaez", "123456", "pedropelaez@gmail.com", "Calle 321", "Personal"))
+    with pytest.raises(ErrorTelefonoNoNumerico):
+        gestor.editar_contacto(Contacto(9, "Pedro Pelaez", "123ABC456", "pedropelaez@gmail.com", "Calle 321", "Personal"))
 
 def test_editar_contacto_email_invalido():
     """

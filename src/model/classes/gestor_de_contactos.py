@@ -43,10 +43,13 @@ class GestorDeContactos:
             raise ErrorTelefonoNoNumerico()
         if len(contacto.telefono) > 15:
             raise ErrorTelefonoMuyLargo()
-        if contacto.email and "@" not in contacto.email:
+        if (contacto.email != '') and (contacto.email and "@" not in contacto.email):
             raise ErrorCorreoInvalido()
-        if contacto.categoria not in ['Personal', 'Trabajo', 'Sin asignar']:
+        if (contacto.categoria != '') and (contacto.categoria not in ['Personal', 'Trabajo', 'Sin asignar']):
             raise CategoriaNoExistente()
+
+        if contacto.categoria == '':
+            contacto.categoria = 'Sin asignar'
 
         self.usuario.contactos.append(contacto)
         return contacto

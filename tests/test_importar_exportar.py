@@ -13,11 +13,20 @@ def test_exportar_lista_con_5_contactos():
     Exportar una lista con 5 contactos.
     Resultado: Contactos exportados correctamente.
     """
+
+    archivo = "tests/VCF/export/contactos.vcf"
+
+    directory = os.path.dirname(archivo) or "."
+    if not os.path.exists(directory):
+        os.makedirs(directory, exist_ok=True)
+    if not os.access(directory, os.W_OK):
+        raise ErrorPermisosDeEscritura("No tienes permisos de escritura en el directorio de destino.")
+
     usuario = Usuario(1, "user", "user@email.com", "anotherpass")
     gestor = GestorVCF(usuario)
     usuario.contactos = [Contacto(i, f"Contacto {i}", "123456789", "contacto@email.com", "Calle Falsa 123", "Trabajo") for i in range(5)]
-    gestor.exportar_contactos(usuario.contactos, "VCF/export/contactos.vcf")
-    assert os.path.exists("VCF/export/contactos.vcf")
+    gestor.exportar_contactos(usuario.contactos, archivo)
+    assert os.path.exists(archivo)
 
 def test_importar_archivo_vcf_valido_con_3_contactos():
     """
@@ -27,7 +36,13 @@ def test_importar_archivo_vcf_valido_con_3_contactos():
     """
     usuario = Usuario(1, "user", "user@email.com", "anotherpass")
     gestor = GestorVCF(usuario)
-    gestor.importar_contactos("VCF/import/3_contactos.vcf")
+    archivo = "tests/VCF/import/3_contactos.vcf"
+    directory = os.path.dirname(archivo) or "."
+    if not os.path.exists(directory):
+        os.makedirs(directory, exist_ok=True)
+    with open(archivo, "w", encoding="utf-8") as file:
+        file.write("BEGIN:VCARD\nFN:Contacto 1\nEND:VCARD\nBEGIN:VCARD\nFN:Contacto 2\nEND:VCARD\nBEGIN:VCARD\nFN:Contacto 3\nEND:VCARD")
+    gestor.importar_contactos(archivo)
     assert len(usuario.contactos) == 3
 
 def test_exportar_contactos_con_caracteres_especiales():
@@ -36,6 +51,14 @@ def test_exportar_contactos_con_caracteres_especiales():
     Exportar contactos con nombres que contienen caracteres especiales.
     Resultado: Contactos exportados correctamente.
     """
+    archivo = "tests/VCF/export/contactos_especiales.vcf"
+
+    directory = os.path.dirname(archivo) or "."
+    if not os.path.exists(directory):
+        os.makedirs(directory, exist_ok=True)
+    if not os.access(directory, os.W_OK):
+        raise ErrorPermisosDeEscritura("No tienes permisos de escritura en el directorio de destino.")
+
     usuario = Usuario(1, "user", "user@email.com", "anotherpass")
     gestor = GestorVCF(usuario)
     usuario.contactos = [
@@ -43,8 +66,8 @@ def test_exportar_contactos_con_caracteres_especiales():
         Contacto(2, "María", "987654321", "maria@email.com", "Calle B", "Amigos"),
         Contacto(3, "El Triple #$%&", "555123456", "triple@email.com", "Calle C", "Personal"),
     ]
-    gestor.exportar_contactos(usuario.contactos, "VCF/export/contactos_especiales.vcf")
-    assert os.path.exists("VCF/export/contactos_especiales.vcf")
+    gestor.exportar_contactos(usuario.contactos, archivo)
+    assert os.path.exists(archivo)
 
 
 # CASOS EXTREMOS
@@ -54,11 +77,19 @@ def test_exportar_lista_con_1000_contactos():
     Exportar una lista con 1000 contactos.
     Resultado: Contactos exportados correctamente.
     """
+    archivo = "tests/VCF/export/contactos_1000.vcf"
+
+    directory = os.path.dirname(archivo) or "."
+    if not os.path.exists(directory):
+        os.makedirs(directory, exist_ok=True)
+    if not os.access(directory, os.W_OK):
+        raise ErrorPermisosDeEscritura("No tienes permisos de escritura en el directorio de destino.")
+    
     usuario = Usuario(1, "user", "user@email.com", "anotherpass")
     gestor = GestorVCF(usuario)
     usuario.contactos = [Contacto(i, f"Contacto {i}", "123456789", "contacto@email.com", "Calle Falsa 123", "Trabajo") for i in range(1000)]
-    gestor.exportar_contactos(usuario.contactos, "VCF/export/contactos_1000.vcf")
-    assert os.path.exists("VCF/export/contactos_1000.vcf")
+    gestor.exportar_contactos(usuario.contactos, archivo)
+    assert os.path.exists(archivo)
 
 def test_importar_archivo_vcf_con_500_contactos():
     """
@@ -66,9 +97,17 @@ def test_importar_archivo_vcf_con_500_contactos():
     Importar un `.vcf` con 500 contactos.
     Resultado: Contactos importados correctamente.
     """
+    archivo = "tests/VCF/import/500_contactos.vcf"
+    directory = os.path.dirname(archivo) or "."
+    if not os.path.exists(directory):
+        os.makedirs(directory, exist_ok=True)
+    with open(archivo, "w", encoding="utf-8") as file:
+        for i in range(500):
+            file.write(f"BEGIN:VCARD\nFN:Contacto {i}\nEND:VCARD\n")
+    
     usuario = Usuario(2, "user", "user@email.com", "anotherpass")
     gestor = GestorVCF(usuario)
-    gestor.importar_contactos("VCF/import/500_contactos.vcf")
+    gestor.importar_contactos(archivo)
     assert len(usuario.contactos) == 500
 
 def test_exportar_lista_vacia_de_contactos():

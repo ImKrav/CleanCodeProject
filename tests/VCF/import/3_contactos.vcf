@@ -1,24 +1,9 @@
 BEGIN:VCARD
-VERSION:3.0
-FN:Juan Pérez
-TEL:+34123456789
-EMAIL:juan.perez@example.com
-ADR:Calle Falsa 123, Madrid, España
-CATEGORY:Amigos
+FN:Contacto 1
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
-FN:María López
-TEL:+34987654321
-EMAIL:maria.lopez@example.com
-ADR:Avenida Siempre Viva 742, Barcelona, España
-CATEGORY:Familia
+FN:Contacto 2
 END:VCARD
 BEGIN:VCARD
-VERSION:3.0
-FN:Carlos García
-TEL:+34678901234
-EMAIL:carlos.garcia@example.com
-ADR:Plaza Mayor 1, Valencia, España
-CATEGORY:Trabajo
+FN:Contacto 3
 END:VCARD

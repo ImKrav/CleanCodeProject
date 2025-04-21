@@ -173,13 +173,19 @@ ScreenManager:
             text: "Filtrar contactos"
             size_hint_y: None
             height: 50
-            on_press: root.filtrar_contactos()
+            on_press: root.filtrar_contacto()
 
         Button:
             text: "Exportar contactos"
             size_hint_y: None
             height: 50
             on_press: root.exportar_contactos()
+
+        Button:
+            text: "Importar contactos"
+            size_hint_y: None
+            height: 50
+            on_press: root.importar_contactos()
 
         Button:
             text: "Cerrar sesión"
