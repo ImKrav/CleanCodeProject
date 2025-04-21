@@ -9,7 +9,10 @@ from src.model.errors import (
     ErrorNoVCF,
     ErrorPermisosDeEscritura,
     ErrorNombreVacio,
+    ErrorTelefonoNoNumerico,
     IDNoEncontrado,
+    ErrorCorreoInvalido,
+    CategoriaNoExistente,
 )
 
 def mostrar_menu_principal():
@@ -63,19 +66,23 @@ def main():
             opcion = input("Seleccione una opción: ")
 
             if opcion == "1":  # Registrarse
+                print("\n--- Registro de Usuario ---")
                 nombre = input("Nombre de usuario: ")
                 email = input("Email: ")
                 password = input("Contraseña: ")
                 try:
                     nuevo_usuario = Usuario(len(autenticador.usuarios) + 1, nombre, email, password)
                     autenticador.registrar_usuario(nuevo_usuario)
-                    usuario_actual = nuevo_usuario  # Solo se asigna si no hay errores
+                    usuario_actual = nuevo_usuario
                     gestor_contactos = GestorDeContactos(usuario_actual)
                     print(f"Usuario '{nombre}' registrado exitosamente.")
+                except ErrorCorreoInvalido as e:
+                    print(f"Error: {e}")
                 except Exception as e:
                     print(f"Error al registrarse: {e}")
 
             elif opcion == "2":  # Iniciar sesión
+                print("\n--- Iniciar Sesión ---")
                 email = input("Email: ")
                 password = input("Contraseña: ")
                 try:
@@ -96,8 +103,8 @@ def main():
             opcion = input("Seleccione una opción: ")
 
             if opcion == "1":  # Crear un contacto
+                print("\n--- Crear Contacto ---")
                 try:
-                    id_contacto = len(usuario_actual.contactos) + 1
                     nombre = input("Nombre: ")
                     telefono = input("Teléfono: ")
                     email = input("Email: ")
@@ -105,12 +112,13 @@ def main():
                     categoria = input("Categoría (Personal, Trabajo, Sin asignar): ")
                     if categoria == "":
                         categoria = "Sin asignar"
-                    contacto = gestor_contactos.agregar_contacto(Contacto(id_contacto, nombre, telefono, email, direccion, categoria))
+                    contacto = gestor_contactos.agregar_contacto(Contacto(len(usuario_actual.contactos) + 1, nombre, telefono, email, direccion, categoria))
                     print(f"Contacto '{contacto.id} - {contacto.nombre}' creado exitosamente.")
                 except Exception as e:
                     print(f"Error al crear contacto: {e}")
 
             elif opcion == "2":  # Editar un contacto
+                print("\n--- Editar Contacto ---")
                 try:
                     id_contacto = int(input("ID del contacto a editar: "))
                     nombre = input("Nuevo nombre (dejar vacío para no cambiar): ")
@@ -122,28 +130,33 @@ def main():
                     print(f"Contacto '{contacto.id} - {contacto.nombre}' actualizado exitosamente.")
                 except IDNoEncontrado:
                     print("Error: Contacto no encontrado.")
+                except ErrorCorreoInvalido as e:
+                    print(f"Error: {e}")
+                except CategoriaNoExistente as e:
+                    print(f"Error: {e}")
                 except Exception as e:
                     print(f"Error al editar contacto: {e}")
 
             elif opcion == "3":  # Ver la lista de contactos
+                print("\n--- Lista de Contactos ---")
                 try:
                     contactos = gestor_contactos.ver_contactos()
                     if not contactos:
                         print("No tienes contactos en tu lista.")
                     else:
-                        print("\n--- Lista de Contactos ---")
                         for contacto in contactos:
                             print(f"ID: {contacto.id} | Nombre: {contacto.nombre} | Teléfono: {contacto.telefono} | Email: {contacto.email} | Dirección: {contacto.direccion} | Categoría: {contacto.categoria}")
                 except Exception as e:
                     print(f"Error al mostrar la lista de contactos: {e}")
 
             elif opcion == "4":  # Buscar un contacto
+                print("\n--- Buscar Contacto ---")
                 try:
                     nombre = input("Ingrese el nombre exacto del contacto a buscar: ")
-                    contacto = gestor_contactos.buscar_contacto(nombre)
-                    if contacto:
-                        print("\n--- Contacto Encontrado ---")
-                        print(f"ID: {contacto.id} | Nombre: {contacto.nombre} | Teléfono: {contacto.telefono} | Email: {contacto.email} | Dirección: {contacto.direccion} | Categoría: {contacto.categoria}")
+                    contactos = gestor_contactos.buscar_contacto(nombre)
+                    if contactos:
+                        for contacto in contactos:
+                            print(f"ID: {contacto.id} | Nombre: {contacto.nombre} | Teléfono: {contacto.telefono} | Email: {contacto.email} | Dirección: {contacto.direccion} | Categoría: {contacto.categoria}")
                     else:
                         print("No se encontró un contacto con ese nombre.")
                 except ErrorNombreVacio:
@@ -152,17 +165,21 @@ def main():
                     print(f"Error al buscar contacto: {e}")
 
             elif opcion == "5":  # Filtrar contactos por nombre y categoría
+                print("\n--- Filtrar Contactos ---")
                 try:
                     nombre = input("Nombre (dejar vacío para no filtrar por nombre): ")
                     categoria = input("Categoría (dejar vacío para no filtrar por categoría): ")
-                    contactos_filtrados = gestor_contactos.filtrar_contacto(categoria) if categoria else gestor_contactos.buscar_contacto(nombre)
+                    contactos_filtrados = gestor_contactos.filtrar_contacto(nombre=nombre, categoria=categoria)
                     print("\nContactos filtrados:")
                     for contacto in contactos_filtrados:
                         print(f"- {contacto.nombre} ({contacto.categoria})")
+                except CategoriaNoExistente as e:
+                    print(f"Error: {e}")
                 except Exception as e:
                     print(f"Error al filtrar contactos: {e}")
 
             elif opcion == "6":  # Exportar contactos a .vcf
+                print("\n--- Exportar Contactos ---")
                 archivo = input("Nombre del archivo .vcf para exportar: ")
                 try:
                     gestor_vcf = GestorVCF(usuario_actual)
@@ -176,6 +193,7 @@ def main():
                     print(f"Error al exportar contactos: {e}")
 
             elif opcion == "7":  # Importar contactos desde .vcf
+                print("\n--- Importar Contactos ---")
                 archivo = input("Nombre del archivo .vcf para importar: ")
                 try:
                     gestor_vcf = GestorVCF(usuario_actual)
@@ -190,6 +208,7 @@ def main():
                     print(f"Error al importar contactos: {e}")
 
             elif opcion == "8":  # Cerrar sesión
+                print("\n--- Cerrar Sesión ---")
                 print(f"Sesión cerrada. Hasta luego, {usuario_actual.nombre}.")
                 usuario_actual = None
                 gestor_contactos = None

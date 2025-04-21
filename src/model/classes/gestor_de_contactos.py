@@ -39,7 +39,7 @@ class GestorDeContactos:
         """
         if not contacto.nombre:
             raise ErrorNombreVacio()
-        if not contacto.telefono.isdigit():
+        if not str(contacto.telefono).isdigit():
             raise ErrorTelefonoNoNumerico()
         if len(contacto.telefono) > 15:
             raise ErrorTelefonoMuyLargo()

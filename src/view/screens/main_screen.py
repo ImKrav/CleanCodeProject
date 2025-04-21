@@ -3,20 +3,47 @@ from kivy.uix.popup import Popup
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.textinput import TextInput
 from kivy.uix.button import Button
+
 from src.model.classes.contacto import Contacto
 from src.model.classes.gestor_de_contactos import GestorDeContactos
 from src.model.classes.gestor_vcf import GestorVCF
 from src.model.errors import CategoriaNoExistente, ErrorListaVaciaDeContactos, ErrorArchivoCorrupto
 
 class MainScreen(Screen):
+    """
+    Pantalla principal de la aplicación.
+
+    Permite gestionar contactos (crear, editar, ver, buscar,
+    filtrar) y realizar importación/exportación de VCF,
+    registrando todas las acciones en una bitácora.
+    """
+    
     def on_enter(self):
+        """
+        Inicializa los gestores de contactos y VCF al entrar en pantalla.
+
+        Comportamiento:
+            - Crea instancias de GestorDeContactos y GestorVCF
+              asociadas al usuario actual.
+            - En caso de error, registra el mensaje de excepción.
+        """
         try:
             self.gestor_contactos = GestorDeContactos(self.manager.usuario_actual)
             self.gestor_vcf = GestorVCF(self.manager.usuario_actual)
         except Exception as e:
             print(f"Error al inicializar gestores: {e}")
+            
 
     def crear_contacto(self):
+        """
+        Abre un cuadro de diálogo para crear un nuevo contacto.
+
+        Comportamiento:
+            - Muestra campos: nombre, teléfono, email, dirección, categoría.
+            - Al presionar 'Guardar', crea un nuevo Contacto y lo añade
+              mediante GestorDeContactos.
+            - Registra la acción o cualquier error en el log.
+        """
         layout = BoxLayout(orientation="vertical", spacing=10, padding=10)
         nombre_input = TextInput(hint_text="Nombre")
         telefono_input = TextInput(hint_text="Teléfono")
@@ -66,6 +93,14 @@ class MainScreen(Screen):
         popup.open()
 
     def editar_contacto(self):
+        """
+        Abre un cuadro de diálogo para editar un contacto existente.
+
+        Comportamiento:
+            - Solicita el ID del contacto y los nuevos datos.
+            - Al guardar, actualiza el contacto mediante GestorDeContactos.
+            - Registra la acción o cualquier error en el log.
+        """
         layout = BoxLayout(orientation="vertical", spacing=10, padding=10)
         id_input = TextInput(hint_text="ID del contacto a editar")
         nombre_input = TextInput(hint_text="Nuevo Nombre")
@@ -121,6 +156,14 @@ class MainScreen(Screen):
         popup.open()
 
     def buscar_contacto(self):
+        """
+        Abre un cuadro de diálogo para buscar contactos por nombre.
+
+        Comportamiento:
+            - Solicita el nombre a buscar.
+            - Registra en el log los resultados encontrados o un mensaje
+              si no hay coincidencias.
+        """
         layout = BoxLayout(orientation="vertical", spacing=10, padding=10)
         nombre_input = TextInput(hint_text="Nombre del contacto a buscar")
         layout.add_widget(nombre_input)
@@ -139,7 +182,7 @@ class MainScreen(Screen):
                 if resultados:
                     print(f"Resultados para '{nombre}':")
                     for contacto in resultados:
-                        print(f"{contacto.id} - {contacto.nombre}")
+                        print(f"{contacto.id} | {contacto.nombre} | {contacto.telefono} | {contacto.email} | {contacto.direccion} | {contacto.categoria}")
                 else:
                     print(f"No se encontraron contactos con el nombre '{nombre}'.")
             except Exception as e:
@@ -152,6 +195,16 @@ class MainScreen(Screen):
         popup.open()
 
     def filtrar_contacto(self):
+        """
+        Abre un cuadro de diálogo para filtrar contactos por categoría.
+
+        Comportamiento:
+            - Solicita la categoría a filtrar.
+            - Registra en el log los contactos encontrados o un mensaje
+              si no existe la categoría o no hay resultados.
+        Excepciones:
+            CategoriaNoExistente: Si la categoría no existe.
+        """
         layout = BoxLayout(orientation="vertical", spacing=10, padding=10)
         categoria_input = TextInput(hint_text="Categoría para filtrar")
         layout.add_widget(categoria_input)
@@ -172,7 +225,7 @@ class MainScreen(Screen):
                 if resultados:
                     print(f"Contactos en la categoría '{categoria}':")
                     for contacto in resultados:
-                        print(f"{contacto.id} - {contacto.nombre}")
+                        print(f"{contacto.id} | {contacto.nombre} | {contacto.telefono} | {contacto.email} | {contacto.direccion}")
                 else:
                     print(f"No se encontraron contactos en la categoría '{categoria}'.")
             except CategoriaNoExistente:
@@ -187,6 +240,15 @@ class MainScreen(Screen):
         popup.open()
 
     def exportar_contactos(self):
+        """
+        Exporta los contactos del usuario actual a un archivo VCF.
+
+        Comportamiento:
+            - Llama a GestorVCF.exportar_contactos con la lista de contactos.
+            - Registra éxito o error en el log.
+        Excepciones:
+            ErrorListaVaciaDeContactos: Si no hay contactos para exportar.
+        """
         try:
             self.gestor_vcf.exportar_contactos(self.manager.usuario_actual.contactos, "contactos.vcf")
             print("Contactos exportados exitosamente a 'contactos.vcf'.")
@@ -196,6 +258,17 @@ class MainScreen(Screen):
             print(f"Error al exportar contactos: {e}")
 
     def importar_contactos(self):
+        """
+        Abre un cuadro de diálogo para importar contactos desde un archivo VCF.
+
+        Comportamiento:
+            - Solicita el nombre del archivo '.vcf'.
+            - Agrega los contactos importados al usuario actual.
+            - Registra éxito o cualquier error en el log.
+        Excepciones:
+            FileNotFoundError: Si el archivo no existe.
+            ErrorArchivoCorrupto: Si el archivo está corrupto o no es válido.
+        """
         layout = BoxLayout(orientation="vertical", spacing=10, padding=10)
         archivo_input = TextInput(hint_text="Nombre del archivo .vcf", multiline=False)
         layout.add_widget(archivo_input)
@@ -229,18 +302,32 @@ class MainScreen(Screen):
         popup.open()
 
     def ver_contactos(self):
+        """
+        Muestra en el log la lista completa de contactos del usuario.
+
+        Comportamiento:
+            - Obtiene la lista de contactos del GestorDeContactos.
+            - Registra cada contacto o un mensaje si la lista está vacía.
+        """
         try:
             contactos = self.gestor_contactos.ver_contactos()
             if contactos:
                 print("Lista de contactos:")
                 for contacto in contactos:
-                    print(f"{contacto.id} - {contacto.nombre}")
+                    print(f"{contacto.id} | {contacto.nombre} | {contacto.telefono} | {contacto.email} | {contacto.direccion} | {contacto.categoria}")
             else:
                 print("No hay contactos disponibles.")
         except Exception as e:
             print(f"Error al ver contactos: {e}")
 
     def cerrar_sesion(self):
+        """
+        Cierra la sesión del usuario y retorna a la pantalla de login.
+
+        Comportamiento:
+            - Cambia la pantalla actual a 'login'.
+            - Registra cualquier error en el log.
+        """
         try:
             self.manager.current = "login"
         except Exception as e:

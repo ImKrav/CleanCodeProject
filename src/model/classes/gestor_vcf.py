@@ -66,7 +66,6 @@ class GestorVCF:
             ErrorArchivoCorrupto: si el archivo no existe o no puede leerse.
             Exception: para errores imprevistos durante la lectura.
         """
-
         if not archivo.endswith(".vcf"):
             raise ErrorNoVCF("El archivo debe tener la extensión .vcf.")
 
@@ -78,7 +77,9 @@ class GestorVCF:
                 for contacto_raw in contactos_raw:
                     if contacto_raw.strip():
                         contacto = self._parsear_contacto_vcf(contacto_raw + "END:VCARD")
-                        contactos_importados.append(contacto)
+                        # Evitar duplicados basados en el ID
+                        if not any(c.id == contacto.id for c in self.usuario.contactos):
+                            contactos_importados.append(contacto)
             
             # Agregar los contactos importados al usuario
             self.usuario.contactos.extend(contactos_importados)
@@ -102,7 +103,8 @@ class GestorVCF:
         """
         return (
             "BEGIN:VCARD\n"
-            "VERSION:3.0\n"
+            "VERSION:4.0\n"
+            f"UID:{contacto.id}\n"
             f"FN:{contacto.nombre}\n"
             f"TEL:{contacto.telefono}\n"
             f"EMAIL:{contacto.email}\n"
@@ -112,7 +114,9 @@ class GestorVCF:
         )
 
     def _parsear_contacto_vcf(self, vcf_data: str) -> Contacto:
-        """Convierte un bloque VCF en un objeto Contacto.
+        """
+        Convierte un bloque VCF en un objeto Contacto.
+
         Args:
             vcf_data (str): bloque de texto con los campos VCF.
 
@@ -120,9 +124,11 @@ class GestorVCF:
             Contacto: instancia con los datos extraídos.
         """
         lines = vcf_data.split("\n")
-        nombre = telefono = email = direccion = categoria = ""
+        uid = nombre = telefono = email = direccion = categoria = ""
         for line in lines:
-            if line.startswith("FN:"):
+            if line.startswith("UID:"):
+                uid = line[4:].strip()
+            elif line.startswith("FN:"):
                 nombre = line[3:].strip()
             elif line.startswith("TEL:"):
                 telefono = line[4:].strip()
@@ -133,5 +139,5 @@ class GestorVCF:
             elif line.startswith("CATEGORY:"):
                 categoria = line[9:].strip()
 
-        id_contacto = len(self.usuario.contactos) + 1
+        id_contacto = int(uid) if uid.isdigit() else len(self.usuario.contactos) + 1
         return Contacto(id_contacto, nombre, telefono, email, direccion, categoria)
