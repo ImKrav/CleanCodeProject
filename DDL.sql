@@ -17,6 +17,6 @@ CREATE TABLE Contactos (
 );
 
 -- CONSULTAS
-SELECT * FROM Usuarios;
+SELECT * FROM "Usuarios";
 
-SELECT * FROM Contactos;
+SELECT * FROM "Contactos";
