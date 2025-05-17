@@ -4,3 +4,9 @@ pytest
 # Kivy
 kivy[full]
 kivymd
+
+# SQLAlchemy
+sqlalchemy
+
+# PostgreSQL
+psycopg2-binary

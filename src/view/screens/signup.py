@@ -1,7 +1,7 @@
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.screenmanager import Screen
-from src.model.classes.autenticador import Autenticador
-from src.model.classes.usuario import Usuario
+from src.model.classes.DB.autenticador import Autenticador
+from src.model.classes.DB.usuario import Usuario
 
 class Signup(Screen):
     """
@@ -42,9 +42,7 @@ class Signup(Screen):
             mostrando el mensaje de la excepción en la interfaz.
         """
         try:
-            nuevo_id = len(self.autenticador.usuarios) + 1
-            nuevo_usuario = Usuario(nuevo_id, nombre, email, password)
-            
+            nuevo_usuario = Usuario(nombre=nombre, email=email, password=password)
             self.autenticador.registrar_usuario(nuevo_usuario)
             
             self.ids.error_label.text = "Registro exitoso. Ahora puedes iniciar sesión."

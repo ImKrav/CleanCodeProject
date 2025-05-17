@@ -1,6 +1,6 @@
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.screenmanager import Screen
-from src.model.classes.autenticador import Autenticador
+from src.model.classes.DB.autenticador import Autenticador
 from src.model.errors import UsuarioNoExistente, ErrorContrasenaIncorrecta, LoginEspacioVacio
 
 class Login(Screen):

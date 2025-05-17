@@ -4,9 +4,9 @@ from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.textinput import TextInput
 from kivy.uix.button import Button
 
-from src.model.classes.contacto import Contacto
-from src.model.classes.gestor_de_contactos import GestorDeContactos
-from src.model.classes.gestor_vcf import GestorVCF
+from src.model.classes.DB.contacto import Contacto
+from src.model.classes.DB.gestor_de_contactos import GestorDeContactos
+from src.model.classes.DB.gestor_vcf import GestorVCF
 from src.model.errors import CategoriaNoExistente, ErrorListaVaciaDeContactos, ErrorArchivoCorrupto
 
 class MainScreen(Screen):
@@ -17,7 +17,7 @@ class MainScreen(Screen):
     filtrar) y realizar importación/exportación de VCF,
     registrando todas las acciones en una bitácora.
     """
-    
+
     def on_enter(self):
         """
         Inicializa los gestores de contactos y VCF al entrar en pantalla.
@@ -32,7 +32,6 @@ class MainScreen(Screen):
             self.gestor_vcf = GestorVCF(self.manager.usuario_actual)
         except Exception as e:
             print(f"Error al inicializar gestores: {e}")
-            
 
     def crear_contacto(self):
         """
@@ -75,12 +74,12 @@ class MainScreen(Screen):
                     "categoria": categoria_input.text,
                 }
                 contacto = Contacto(
-                    id=len(self.manager.usuario_actual.contactos) + 1,
                     nombre=datos["nombre"],
                     telefono=datos["telefono"],
                     email=datos["email"],
                     direccion=datos["direccion"],
                     categoria=datos["categoria"],
+                    usuario_id=self.manager.usuario_actual.id
                 )
                 self.gestor_contactos.agregar_contacto(contacto)
                 print(f"Contacto '{contacto.nombre}' creado exitosamente.")
@@ -142,6 +141,7 @@ class MainScreen(Screen):
                     email=datos["email"],
                     direccion=datos["direccion"],
                     categoria=datos["categoria"],
+                    usuario_id=self.manager.usuario_actual.id
                 )
                 self.gestor_contactos.editar_contacto(contacto_editado)
                 print(f"Contacto con ID {id_contacto} actualizado exitosamente.")
@@ -250,7 +250,7 @@ class MainScreen(Screen):
             ErrorListaVaciaDeContactos: Si no hay contactos para exportar.
         """
         try:
-            self.gestor_vcf.exportar_contactos(self.manager.usuario_actual.contactos, "contactos.vcf")
+            self.gestor_vcf.exportar_contactos("contactos.vcf")
             print("Contactos exportados exitosamente a 'contactos.vcf'.")
         except ErrorListaVaciaDeContactos:
             print("Error: La lista de contactos está vacía.")
@@ -287,7 +287,6 @@ class MainScreen(Screen):
             else:
                 try:
                     contactos_importados = self.gestor_vcf.importar_contactos(archivo)
-                    self.manager.usuario_actual.contactos.extend(contactos_importados)
                     print(f"Contactos importados exitosamente desde '{archivo}'.")
                     popup.dismiss()
                 except FileNotFoundError:

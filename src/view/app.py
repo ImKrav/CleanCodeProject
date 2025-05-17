@@ -3,7 +3,7 @@ from kivy.app import App
 from kivy.lang import Builder
 from kivy.uix.screenmanager import ScreenManager
 
-from src.model.classes.usuario import Usuario
+from src.model.classes.DB.usuario import Usuario
 from src.view.screens.first_screen import FirstScreen
 from src.view.screens.login import Login
 from src.view.screens.signup import Signup
