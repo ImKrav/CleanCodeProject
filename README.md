@@ -8,8 +8,11 @@ El objetivo de este proyecto es desarrollar una aplicación para la gestión de 
 - [Alejandro Bermudez Bedoya](https://github.com/ImKrav)
 - [Juan David Mosquera Garcia](https://github.com/SHURECITO)
 
-## Diagrama de Clases
+## Diagrama de Clases UML
 ![Diagrama de Clases](https://github.com/ImKrav/CleanCodeProject/blob/main/assets/DiagramaDeClases.png?raw=true)
+
+## Diagrama ER
+![Diagrama de ER](https://github.com/ImKrav/CleanCodeProject/blob/main/assets/DiagramaER.png?raw=true)
 
 ## Casos de Prueba
 
