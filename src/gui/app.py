@@ -4,10 +4,10 @@ from kivy.lang import Builder
 from kivy.uix.screenmanager import ScreenManager
 
 from src.model.classes.DB.usuario import Usuario
-from src.view.screens.first_screen import FirstScreen
-from src.view.screens.login import Login
-from src.view.screens.signup import Signup
-from src.view.screens.main_screen import MainScreen
+from src.gui.screens.first_screen import FirstScreen
+from src.gui.screens.login import Login
+from src.gui.screens.signup import Signup
+from src.gui.screens.main_screen import MainScreen
 
 class CustomScreenManager(ScreenManager):
     """
