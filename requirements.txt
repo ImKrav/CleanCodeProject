@@ -1,6 +1,12 @@
 # pytest
 pytest
 
+# multipart
+python-multipart
+
+# dotenv
+python-dotenv
+
 # Kivy
 kivy[full]
 kivymd
@@ -10,3 +16,12 @@ sqlalchemy
 
 # PostgreSQL
 psycopg2-binary
+
+# fastapi
+fastapi
+
+# uvicorn
+uvicorn
+
+# starlette
+starlette.staticfiles

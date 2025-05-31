@@ -2,34 +2,185 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Login / Signup</title>
+    <title>Gestor de Contactos</title>
 </head>
 <body>
-    <h1>Iniciar Sesión</h1>
-    <form action="/login" method="post">
-        <label for="login-email">Correo electrónico:</label>
-        <input type="email" id="login-email" name="email" required>
-        <br>
-        <label for="login-password">Contraseña:</label>
-        <input type="password" id="login-password" name="password" required>
-        <br>
-        <button type="submit">Entrar</button>
-    </form>
-
-    <hr>
-
-    <h1>Registrarse</h1>
-    <form action="/signup" method="post">
-        <label for="signup-name">Nombre:</label>
-        <input type="text" id="signup-name" name="name" required>
-        <br>
-        <label for="signup-email">Correo electrónico:</label>
-        <input type="email" id="signup-email" name="email" required>
-        <br>
-        <label for="signup-password">Contraseña:</label>
-        <input type="password" id="signup-password" name="password" required>
-        <br>
-        <button type="submit">Registrarse</button>
-    </form>
+    <h1>Gestor de Contactos</h1>
+    <div id="auth">
+        <h2>Iniciar Sesión</h2>
+        <form id="login-form">
+            <input type="email" id="login-email" placeholder="Email" required />
+            <input type="password" id="login-password" placeholder="Contraseña" required />
+            <button type="submit">Entrar</button>
+        </form>
+        <h2>Registrarse</h2>
+        <form id="signup-form">
+            <input type="text" id="signup-nombre" placeholder="Nombre" required />
+            <input type="email" id="signup-email" placeholder="Email" required />
+            <input type="password" id="signup-password" placeholder="Contraseña" required />
+            <button type="submit">Registrar</button>
+        </form>
+        <div id="auth-msg"></div>
+    </div>
+    <div id="app" style="display:none">
+        <button onclick="logout()">Cerrar sesión</button>
+        <h2>Contactos</h2>
+        <ul id="lista-contactos"></ul>
+        <h3>Agregar Contacto</h3>
+        <form id="form-contacto">
+            <input type="text" id="nombre" placeholder="Nombre" required />
+            <input type="text" id="telefono" placeholder="Teléfono" required />
+            <input type="email" id="email" placeholder="Email" />
+            <input type="text" id="direccion" placeholder="Dirección" />
+            <input type="text" id="categoria" placeholder="Categoría" />
+            <button type="submit">Agregar</button>
+        </form>
+        <h3>Buscar Contacto</h3>
+        <input type="text" id="buscar-nombre" placeholder="Nombre" />
+        <button onclick="buscarContacto()">Buscar</button>
+        <ul id="buscar-result"></ul>
+        <h3>Filtrar Contactos</h3>
+        <input type="text" id="filtrar-nombre" placeholder="Nombre" />
+        <input type="text" id="filtrar-categoria" placeholder="Categoría" />
+        <button onclick="filtrarContacto()">Filtrar</button>
+        <ul id="filtrar-result"></ul>
+        <h3>Importar/Exportar Contactos (.vcf)</h3>
+        <form id="importar-form">
+            <input type="file" id="importar-archivo" accept=".vcf" required />
+            <button type="submit">Importar</button>
+        </form>
+        <button onclick="exportarContactos()">Exportar</button>
+        <a id="descargar-vcf" style="display:none">Descargar VCF</a>
+    </div>
+    <script>
+    let usuario_id = null;
+    function mostrarApp(logged) {
+        document.getElementById('auth').style.display = logged ? 'none' : '';
+        document.getElementById('app').style.display = logged ? '' : 'none';
+    }
+    document.getElementById('login-form').onsubmit = async e => {
+        e.preventDefault();
+        const email = document.getElementById('login-email').value;
+        const password = document.getElementById('login-password').value;
+        const res = await fetch('/api/v1/login', {
+            method: 'POST', headers: {'Content-Type':'application/json'},
+            body: JSON.stringify({email, password})
+        });
+        if(res.ok) {
+            const user = await res.json();
+            usuario_id = user.id;
+            mostrarApp(true);
+            cargarContactos();
+        } else {
+            document.getElementById('auth-msg').innerText = 'Login incorrecto';
+        }
+    };
+    document.getElementById('signup-form').onsubmit = async e => {
+        e.preventDefault();
+        const nombre = document.getElementById('signup-nombre').value;
+        const email = document.getElementById('signup-email').value;
+        const password = document.getElementById('signup-password').value;
+        const res = await fetch('/api/v1/signup', {
+            method: 'POST', headers: {'Content-Type':'application/json'},
+            body: JSON.stringify({nombre, email, password})
+        });
+        if(res.ok) {
+            document.getElementById('auth-msg').innerText = 'Usuario registrado. Ahora puedes iniciar sesión.';
+        } else {
+            document.getElementById('auth-msg').innerText = 'Error al registrar usuario';
+        }
+    };
+    function logout() {
+        usuario_id = null;
+        mostrarApp(false);
+    }
+    async function cargarContactos() {
+        if(!usuario_id) return;
+        const res = await fetch(`/api/v1/contactos?usuario_id=${usuario_id}`);
+        const contactos = await res.json();
+        const lista = document.getElementById('lista-contactos');
+        lista.innerHTML = '';
+        contactos.forEach(c => {
+            const li = document.createElement('li');
+            li.textContent = `${c.id} - ${c.nombre} (${c.telefono})`;
+            const btn = document.createElement('button');
+            btn.textContent = 'Eliminar';
+            btn.onclick = async () => {
+                await fetch(`/api/v1/contactos/${c.id}?usuario_id=${usuario_id}`, { method: 'DELETE' });
+                cargarContactos();
+            };
+            li.appendChild(btn);
+            lista.appendChild(li);
+        });
+    }
+    document.getElementById('form-contacto').onsubmit = async e => {
+        e.preventDefault();
+        const contacto = {
+            nombre: document.getElementById('nombre').value,
+            telefono: document.getElementById('telefono').value,
+            email: document.getElementById('email').value,
+            direccion: document.getElementById('direccion').value,
+            categoria: document.getElementById('categoria').value || 'Sin asignar'
+        };
+        await fetch(`/api/v1/contactos?usuario_id=${usuario_id}`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(contacto)
+        });
+        cargarContactos();
+    };
+    async function buscarContacto() {
+        const nombre = document.getElementById('buscar-nombre').value;
+        const res = await fetch(`/api/v1/buscar_contacto?nombre=${encodeURIComponent(nombre)}&usuario_id=${usuario_id}`);
+        const contactos = await res.json();
+        const ul = document.getElementById('buscar-result');
+        ul.innerHTML = '';
+        contactos.forEach(c => {
+            const li = document.createElement('li');
+            li.textContent = `${c.id} - ${c.nombre} (${c.telefono})`;
+            ul.appendChild(li);
+        });
+    }
+    async function filtrarContacto() {
+        const nombre = document.getElementById('filtrar-nombre').value;
+        const categoria = document.getElementById('filtrar-categoria').value;
+        const res = await fetch(`/api/v1/filtrar_contacto?usuario_id=${usuario_id}`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({nombre, categoria})
+        });
+        const contactos = await res.json();
+        const ul = document.getElementById('filtrar-result');
+        ul.innerHTML = '';
+        contactos.forEach(c => {
+            const li = document.createElement('li');
+            li.textContent = `${c.id} - ${c.nombre} (${c.telefono})`;
+            ul.appendChild(li);
+        });
+    }
+    document.getElementById('importar-form').onsubmit = async e => {
+        e.preventDefault();
+        const archivo = document.getElementById('importar-archivo').files[0];
+        const formData = new FormData();
+        formData.append('archivo', archivo);
+        formData.append('usuario_id', usuario_id);
+        await fetch(`/api/v1/importar_contactos?usuario_id=${usuario_id}`, {
+            method: 'POST',
+            body: formData
+        });
+        cargarContactos();
+    };
+    async function exportarContactos() {
+        const res = await fetch(`/api/v1/exportar_contactos?usuario_id=${usuario_id}`);
+        const blob = await res.blob();
+        const url = window.URL.createObjectURL(blob);
+        const a = document.getElementById('descargar-vcf');
+        a.href = url;
+        a.download = `contactos_${usuario_id}.vcf`;
+        a.style.display = '';
+        a.textContent = 'Descargar VCF';
+    }
+    mostrarApp(false);
+    </script>
 </body>
 </html>
